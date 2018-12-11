@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_added_offers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    tools:context=".ui.AddNewOfferActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/cell_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolBar"
+        android:background="@drawable/app_board"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight=".60"
+            android:gravity="center"
+            android:text="@string/tab_title_review_job"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/large_padding_margin"
+        android:orientation="vertical"
+        android:layout_below="@id/topBar">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/large_padding_margin"
+            android:text="@string/lbl_job_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/large_padding_margin"
+                android:text="@string/lbl_job_marks"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />>
+
+            <RatingBar
+                android:layout_below="@+id/rate_me"
+                android:id="@+id/ratingBar"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:background="@drawable/bg_filled"
+            android:ems="10"
+            android:hint="@string/hint_description"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/large_padding_margin"
+            android:textSize="@dimen/edit_text_size" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:background="@drawable/btn_filled"
+            android:padding="@dimen/large_padding_margin"
+            android:text="@string/btn_submit"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_filled_txt_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

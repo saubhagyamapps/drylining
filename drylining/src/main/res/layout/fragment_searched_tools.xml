@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SearchedToolsFragment">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/app_bg_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_weight=".50"
+            android:paddingLeft="8dp"
+            android:text="@string/tab_recently_added_tools"
+            android:textSize="@dimen/tab_txt_size"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_add_tool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".25"
+            android:background="@drawable/app_board"
+            android:text="@string/btn_post_tool"
+            android:textAllCaps="false"
+            android:textColor="@color/color_gray_66"
+            android:textSize="@dimen/tab_txt_size" />
+
+        <Button
+            android:id="@+id/btn_new_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".25"
+            android:background="@drawable/app_board"
+            android:text="@string/btn_new_search"
+            android:textAllCaps="false"
+            android:textColor="@color/color_gray_66"
+            android:textSize="@dimen/tab_txt_size" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/txtNoRecentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:text="None recent offers to display.\n Please create new search."
+        android:textSize="@dimen/msg_txt_size"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"></LinearLayout>
+    </HorizontalScrollView>
+
+    <include
+        android:id="@+id/adminBar"
+        layout="@layout/content_admin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:visibility="gone" />
+
+</RelativeLayout>

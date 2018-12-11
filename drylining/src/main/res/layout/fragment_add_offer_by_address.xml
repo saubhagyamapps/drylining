@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapView"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_padding_margin">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/lbl_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_error"
+                    android:padding="@dimen/medium_padding_margin"
+                    android:text="ERROR!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/msg_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:text="Sorry but submitted email or password are not correct. Please try again."
+                    android:textColor="@color/err_msg_color"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_post_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:completionThreshold="1"
+                    android:hint="@string/lbl_name"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/hint_price"
+                    android:layout_weight=".6"
+                    android:inputType="phone"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/sp_RoomTypeContainer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:layout_marginTop="@dimen/large_padding_margin"
+                        android:background="@drawable/bg_filled"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinnerRoom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/MySpinnerTheme"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sp_CountryContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinnerCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MySpinnerTheme"/>
+                </RelativeLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_city_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:completionThreshold="1"
+                    android:hint="@string/hint_city_town_name"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_street_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/hint_street_name"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/sp_PropContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinnerProperty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MySpinnerTheme" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sp_GarageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinnerType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MySpinnerTheme"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:ems="10"
+                    android:hint="@string/hint_description"
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:completionThreshold="1"
+                    android:hint="Contact Name"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_contact_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:completionThreshold="1"
+                    android:hint="Contact Phone Number"
+                    android:inputType="phone"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <com.app.drylining.custom.ExpandableHeightGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/small_padding_margin"
+                    android:isScrollContainer="false"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/very_small_padding_margin" />
+
+                <Button
+                    android:id="@+id/btn_add_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/btn_filled"
+                    android:padding="@dimen/large_padding_margin"
+                    android:text="@string/btn_post_job"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/btn_filled_txt_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">477377497777-mnb2ukhdls8cvpihdod4aqo1vhnh6r42.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://drylining-test.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">477377497777</string>
+    <string name="google_api_key" translatable="false">AIzaSyCjZSBD1CpJx2x9GluN4ELlSkcKjBYAPWM</string>
+    <string name="google_app_id" translatable="false">1:477377497777:android:15b3fc2997b49876</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCjZSBD1CpJx2x9GluN4ELlSkcKjBYAPWM</string>
+    <string name="google_storage_bucket" translatable="false">drylining-test.appspot.com</string>
+    <string name="project_id" translatable="false">drylining-test</string>
+</resources>

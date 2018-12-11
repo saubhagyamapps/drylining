@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    tools:context=".ui.SearchedOffersActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/cell_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/app_board"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_my_favorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".60"
+                    android:gravity="center"
+                    android:text="My account"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tab_txt_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topBar"
+                android:orientation="vertical"
+                android:padding="@dimen/large_padding_margin">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/lbl_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_error"
+                    android:padding="@dimen/large_padding_margin"
+                    android:text="ERROR!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/msg_txt_size" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/msg_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:text="Please correct the below fields."
+                    android:textColor="@color/err_msg_color"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/lbl_name"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textColor="@color/detail_text_color"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_email"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/lbl_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textColor="@color/detail_text_color"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_mobile"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/lbl_mobile"
+                    android:inputType="phone"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textColor="@color/detail_text_color"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_password"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/lbl_password"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textColor="@color/detail_text_color"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_retype_password"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="@string/lbl_retype_password"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textColor="@color/detail_text_color"
+                    android:textSize="@dimen/edit_text_size" />
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/large_padding_margin"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/btn_filled"
+                    android:padding="@dimen/big_btn_padding"
+                    android:stateListAnimator="@null"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/btn_filled_txt_color"
+                    android:textSize="@dimen/big_btn_txt_size" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/adminBar"
+        layout="@layout/content_admin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:visibility="gone" />
+
+</RelativeLayout>

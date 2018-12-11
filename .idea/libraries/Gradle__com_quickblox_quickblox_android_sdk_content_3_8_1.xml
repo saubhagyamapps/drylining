@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.quickblox:quickblox-android-sdk-content-3.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/quickblox-android-sdk-content-3.8.1.aar/b84f5738a4b63e725f1bc511a72c36b7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/quickblox-android-sdk-content-3.8.1.aar/b84f5738a4b63e725f1bc511a72c36b7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

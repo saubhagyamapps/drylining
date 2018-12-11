@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button1"
+        tools:listitem="@layout/row_multiphoto_item"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Select Photos"
+        android:background="@drawable/btn_filled"
+        android:padding="@dimen/big_btn_padding"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false"
+        android:textColor="@drawable/btn_filled_txt_color"
+        android:textSize="@dimen/big_btn_txt_size"/>
+
+</android.support.design.widget.CoordinatorLayout>

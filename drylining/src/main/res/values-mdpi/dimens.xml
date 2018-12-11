@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--General dimensions-->
+    <dimen name="very_small_text_size">8sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="high_large_text_size">18sp</dimen>
+
+    <dimen name="very_small_padding_margin">5dp</dimen>
+    <dimen name="small_padding_margin">10dp</dimen>
+    <dimen name="medium_padding_margin">15dp</dimen>
+    <dimen name="large_padding_margin">20dp</dimen>
+    <dimen name="very_large_padding_margin">25dp</dimen>
+    <dimen name="high_large_padding_margin">50dp</dimen>
+    <dimen name="very_high_large_padding_margin">75dp</dimen>
+
+    <dimen name="divider_height">2px</dimen>
+    <dimen name="divider_height_large">4px</dimen>
+</resources>

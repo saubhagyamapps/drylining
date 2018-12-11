@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--V2 colors-->
+    <color name="primary_dark_color">#9A6964</color>
+    <color name="primary_color">#D09165</color>
+    <color name="accent_color">#000000</color>
+    <color name="app_bg_color">#E9C8AE</color>
+    <color name="app_board_color">#D9B690</color>
+    <color name="unread_board_color">#AC7F80</color>
+    <color name="read_board_color">#9E866B</color>
+    <color name="toolbar_title_txt_color">#ffffff</color>
+    <color name="toolbar_menu_btn_color">#ffffff</color>
+    <color name="toolbar_icon_color">#ffffff</color>
+    <color name="back_btn_color">#ffffff</color>
+
+    <color name="divider_color">#7C7C7C</color>
+
+    <!--Tab Realted color-->
+    <color name="tab_selected">#ffffff</color>
+    <color name="tab_unselected">#00000000</color>
+    <color name="tab_indicator_color">#ffffff</color>
+    <color name="white_bgr_tab_selected">#ffffff</color>
+    <color name="white_bgr_tab_unselected">#00000000</color>
+    <color name="white_bgr_tab_indicator_color">#00000000</color>
+
+
+    <color name="lighter_gray">#20778286</color>
+    <color name="light_gray">#dfdedb</color>
+    <color name="blue">#3030ff</color>
+    <color name="lightblue">#b7c1ca</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#eeffffff</color>
+    <color name="newgray">#f3f3f3</color>
+
+    <color name="red">#ff0000</color>
+    <color name="red_dark">#CCff0000</color>
+    <color name="black">#000000</color>
+    <color name="green">#7DB226</color>
+    <color name="gray">#808080</color>
+    <color name="dark_gray">#2e2e2e</color>
+    <color name="pink">#FF1493</color>
+    <color name="transparent_gray">#20808080</color>
+    <color name="orange">#FFA500</color>
+    <color name="purple">#800080</color>
+    <color name="darkblue">#0099cc</color>
+    <color name="grayStart">#adadad</color>
+    <color name="grayEnd">#ffffff</color>
+    <color name="bg_handle_pressed">#a0a0a0</color>
+    <color name="darkblue1">#324F85</color>
+    <color name="background">#B2D3E7</color>
+    <color name="transparent_black">#d9000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="icon_gray">#525252</color>
+
+
+    <color name="but_search_detail_top">#e5e5e5</color>
+    <color name="detail_text_color">#000000</color>
+    <color name="detail_sub_text_color">#666666</color>
+    <color name="detail_address_color">#808080</color>
+
+    <color name="upload_button">#4d4d4d</color>
+    <color name="upload_button_no_more_images">#cccccc</color>
+    <color name="banner_color">#536e86</color>
+    <color name="edit_text_color">#999999</color>
+
+    <color name="err_msg_color">#000000</color>
+
+    <color name="color_gray_e5">#e5e5e5</color>
+    <color name="color_gray_ef">#efefef</color>
+    <color name="color_gray_cc">#cccccc</color>
+    <color name="color_gray_99">#999999</color>
+    <color name="color_gray_80">#808080</color>
+    <color name="color_gray_66">#666666</color>
+    <color name="color_gray_1a">#1a1a1a</color>
+    <color name="color_gray_4d">#4d4d4d</color>
+
+    <color name="color_checked">#1a1a1a</color>
+    <color name="color_unchecked">#808080</color>
+    <color name="title_color">#000000</color>
+    
+    <color name="color_success">#7DB226</color>
+
+    <!-- App Colors -->
+
+    <color name="app_theme_color">#66BE67</color> 
+    <color name="header_bgr_color">#F9F5F6</color>
+    <color name="header_title_txt_color">#66BE67</color>
+    <color name="header_sub_title_txt_color">#5DB7DC</color>
+    <color name="icon_color">#B1D638</color>
+    <color name="listview_divider_color">#D2D2D4</color>
+    <color name="gray_txt_color">#7C7C7C</color>
+    <color name="light_pink_bgr_color">#80EA2578</color>
+    <color name="gray_dark_txt_color">#525151</color>
+    <color name="pink_txt_color">#F49FC6</color>
+    <color name="list_item_bgr_color">#40778286</color>
+    <color name="login_btn_color">#CD3D7B</color>
+    <color name="login_background">#E9C8AE</color>
+    <color name="login_text_color">#999999</color>
+    <color name="plant_list_cell_bgr_color">#74C52C</color>
+    <color name="plant_list_cell_txt_color">#fafafa</color>
+    <color name="header_bar_btn_bgr_color">#66BE67</color>
+    <color name="header_bar_btn_bgr_color_dark">#CC66BE67</color>
+    <color name="header_bar_orange_btn_bgr_color">#f1c40f</color>
+    <color name="header_bar_orange_btn_bgr_color_dark">#CCf1c40f</color>
+    <color name="it_return_draft_bgr_color">#5BC0DE</color>
+    <color name="it_return_submitted_bgr_color">#ff0000</color>
+    <color name="it_return_completed_bgr_color">#66BE67</color>
+    <color name="invalid_view_bgr_color">#fff0f0</color>
+
+    <color name="divider_green">#66BE67</color>
+    <color name="divider_red">#D8000C</color>
+    <color name="dark_red">#CC0000</color>
+    <color name="gray_red">#B23A26</color>
+
+    <color name="before_file_upload_cell_bg_color">#A0F2B2</color>
+    <color name="after_file_upload_cell_bg_color">#D1D1F2</color>
+
+    <!--View History-->
+    <color name="paid_itr_color">#028606</color>
+    <color name="pending_itr_color">#0693B7</color>
+    <color name="submitted_itr_color">#CC0000</color>
+
+    <color name="paid_payment_color">#028606</color>
+    <color name="failed_payment_color">#CC0000</color>
+
+    <!-- Reward History-->
+    <color name="paid_status_color">#028606</color>
+    <color name="pending_status_color">#808080</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="color_grey">#d3d3d3</color>
+
+    <color name="color_primary">@color/white</color>
+    <color name="color_primary_dark">#d0d0d0</color>
+    <color name="color_accent">@color/color_green_qb</color>
+
+    <color name="background_app_color">#ffffff</color>
+
+    <color name="color_blue_qb">#046ad0</color>
+    <color name="color_light_blue_qb">#87cefa</color>
+    <color name="color_green_qb">#4ad24d</color>
+    <color name="color_username_rectangle">#99000000</color>
+
+    <color name="text_color_primary">#212121</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_light_grey">#dedede</color>
+    <color name="text_color_medium_grey">#b1b1b1</color>
+    <color name="text_color_medium_dark_grey">#747474</color>
+    <color name="text_color_dark_grey">#6e6e6e</color>
+    <color name="text_color_green">@color/color_green_qb</color>
+
+    <color name="background_chat_color">#f5f6f5</color>
+    <color name="chat_bubble_date_color">#80dedede</color>
+
+    <color name="selected_list_item_color">#e0e0e0</color>
+
+    <color name="random_color_1">#ff9500</color>
+    <color name="random_color_2">#007aff</color>
+    <color name="random_color_3">#ff0091</color>
+    <color name="random_color_4">#4cd964</color>
+    <color name="random_color_5">#c3c1f2</color>
+    <color name="random_color_6">#a727a5</color>
+    <color name="random_color_7">#77a6d0</color>
+    <color name="random_color_8">#d0021b</color>
+    <color name="random_color_9">#166642</color>
+    <color name="random_color_10">#bdbdbd</color>
+</resources>

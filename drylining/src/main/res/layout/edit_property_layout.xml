@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapView"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_padding_margin">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/lbl_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_error"
+                    android:padding="@dimen/medium_padding_margin"
+                    android:text="ERROR!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/msg_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:text="Sorry but submitted email or password are not correct. Please try again."
+                    android:textColor="@color/err_msg_color"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_city_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:completionThreshold="1"
+                    android:hint="City/Town Name"
+                    android:inputType="text"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_street_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="Street Name"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="16sp" />
+
+                <!--<android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_unit_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="Unit Number"
+                    android:inputType="phone"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="16sp" />-->
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/btn_pick_from_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_filled"
+                    android:padding="4dp"
+                    android:text="Pick Address from map"
+                    android:textColor="@drawable/btn_filled_txt_color"
+                    android:textSize="15sp"
+                    android:textAllCaps="false" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:paddingBottom="@dimen/large_padding_margin"
+                    android:paddingLeft="@dimen/medium_padding_margin"
+                    android:paddingRight="6dp"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/sppinerProperty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/property_types"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:paddingBottom="@dimen/large_padding_margin"
+                    android:paddingLeft="@dimen/medium_padding_margin"
+                    android:paddingRight="6dp"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/sppinerRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/currency_types"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:paddingBottom="@dimen/large_padding_margin"
+                    android:paddingLeft="@dimen/medium_padding_margin"
+                    android:paddingRight="6dp"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/sppinerType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/property_extra_spaces"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/large_padding_margin"
+                    android:text="Price / Square metre EUR"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/txt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/bg_filled"
+                    android:hint="0"
+                    android:inputType="phone"
+                    android:padding="@dimen/large_padding_margin"
+                    android:textAppearance="@style/EditTextStyle"
+                    android:textSize="16sp" />
+
+                <com.app.drylining.custom.ExpandableHeightGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/small_padding_margin"
+                    android:isScrollContainer="false"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/very_small_padding_margin" />
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="#4d4d4d"
+                    android:onClick="uploadImage"
+                    android:padding="@dimen/large_padding_margin"
+                    android:text="Upload Images\n(you can add 8 more)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btn_add_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large_padding_margin"
+                    android:background="@drawable/btn_filled"
+                    android:padding="@dimen/large_padding_margin"
+                    android:text="Add Offer"
+                    android:textColor="@drawable/btn_filled_txt_color"
+                    android:textSize="18sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/selectionDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white_transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/high_large_padding_margin">
+
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upload Images"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/lblImgCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:text="(You can add 8 more)"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblImgCount"
+            android:layout_margin="25dp"
+            android:layout_marginTop="@dimen/medium_padding_margin">
+
+            <TextView
+                android:id="@+id/btnAlbum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:background="@drawable/btn_filled_rounded"
+                android:drawableLeft="@drawable/ic_gallery"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/large_padding_margin"
+                android:paddingLeft="@dimen/large_padding_margin"
+                android:paddingRight="@dimen/large_padding_margin"
+                android:paddingTop="@dimen/large_padding_margin"
+                android:text="Album"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                android:layout_weight=".50"
+                android:background="@drawable/btn_filled_rounded"
+                android:drawableLeft="@drawable/ic_camera"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/large_padding_margin"
+                android:paddingLeft="@dimen/large_padding_margin"
+                android:paddingRight="@dimen/large_padding_margin"
+                android:paddingTop="@dimen/large_padding_margin"
+                android:text="Camera"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

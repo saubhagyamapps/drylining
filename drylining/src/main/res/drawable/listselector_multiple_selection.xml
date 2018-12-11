@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <item android:state_activated="true" android:drawable="@color/light_gray" />
+    <item android:state_checked="true" android:drawable="@color/white" />
+    <item android:state_pressed="true" android:drawable="@color/white" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

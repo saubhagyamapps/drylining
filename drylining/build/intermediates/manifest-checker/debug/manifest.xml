@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.drylining"
+    android:versionCode="4"
+    android:versionName="1.03" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:required="false" />
+
+    <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.app.drylining.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.drylining.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.app.drylining.DRYLINING"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.app.drylining.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.drylining.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.custom.CustomWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.ui.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchedOffersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.SearchedResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.AddedOffersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchedOfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.AddedOfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.AddNewOfferActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchNewOfferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.OtpVerificationActivity"
+            android:label="@string/title_activity_otp_verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.app.drylining.ui.EditPropertyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityModifyOffer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.ui.MultiPhotoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.NoInternetMessage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/alert_title_none_net"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityNewQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityConversationsLessee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityConversationsRenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityRemoveOffer"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityNotifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityFavoriteOffers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityMyAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityNotifySettings"
+            android:screenOrientation="portrait" />
+
+        <!-- FCM -->
+        <service android:name="com.app.drylining.fcm.MyFcmListenerService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.app.drylining.fcm.MyInstanceIDListenerService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/app_bg_color" />
+        <!-- FCM END -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.app.drylining.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlS2EZwDoAJjsQ3ftM7X1hs3XOyjymh_4" />
+
+        <activity android:name="com.app.drylining.ui.DashboardActivity" />
+        <activity android:name="com.app.drylining.ui.AddNewToolActivity" />
+        <activity android:name="com.app.drylining.ui.AddedToolDetailActivity" />
+        <activity android:name="com.app.drylining.ui.ActivityModifyTool" />
+        <activity android:name="com.app.drylining.ui.JobReviewActivity" />
+        <activity android:name="com.app.drylining.ui.ActivityRemoveTool" />
+        <activity android:name="com.app.drylining.ui.SearchActivity" />
+        <activity android:name="com.app.drylining.ui.SearchedToolDetailActivity" />
+        <activity android:name="com.app.drylining.ui.SearchNewToolActivity" />
+        <activity android:name="com.app.drylining.ui.SearchedToolResultActivity" />
+        <activity android:name="com.app.drylining.ui.OTPAcivity" />
+        <activity
+            android:name="com.app.drylining.chat.ui.activity.SelectUsersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.drylining.chat.ui.activity.DialogsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme" />
+        <activity
+            android:name="com.app.drylining.chat.ui.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.app.drylining.chat.ui.activity.ChatInfoActivity"
+            android:label="@string/chat_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme" />
+        <activity
+            android:name="com.app.drylining.chat.ui.activity.AttachmentImageActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.quickblox.messages.services.SubscribeTaskManager"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.quickblox.messages.services.SubscribeService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <meta-data
+            android:name="com.quickblox.ui.kit.chatmessage.adapter.media.video.thumbnails.VideoThumbnailModule"
+            android:value="GlideModule" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.app.drylining" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.app.drylining.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.app.drylining.com.squareup.picasso"
+            android:exported="false" />
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.app.drylining.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

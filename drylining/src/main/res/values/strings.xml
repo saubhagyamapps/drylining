@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name" translatable="false">Drylining</string>
+    <string name="lbl_no_records">No Records</string>
+
+    <string name="lbl_select_file">Please Select </string>
+
+    <!--Font -->
+    <string name="sans_pro_regular" translatable="false">sans_pro_regular.otf</string>
+    <string name="sans_pro_bold" translatable="false">sans_pro_bold.otf</string>
+
+    <!--Activity Titles-->
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_change_password">New Password</string>
+    <string name="title_activity_change_password_success">Password changed</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_search_results">Search Results</string>
+
+    <!--Tabs Titles-->
+    <string name="tab_title_login">Login</string>
+    <string name="tab_title_signup">Register</string>
+    <string name="tab_title_add_new_offer" translatable="false">Dry-lining Job</string>
+    <string name="tab_title_add_new_tool">Market Place</string>
+    <string name="tab_title_add_offer_by_address">Post Job</string>
+    <string name="tab_title_add_tool_by_address">Post Tool</string>
+    <string name="tab_title_modify_offer_by_address">Modify Job</string>
+    <string name="tab_title_modify_tool_by_address">Modify Tool</string>
+    <string name="tab_title_add_offer_pick_from_map" translatable="false">Pick from map</string>
+    <string name="tab_title_seach_offer_by_address">Search Job</string>
+    <string name="tab_title_seach_tool_by_address">Search Tool</string>
+    <string name="tab_title_search_offer_pick_from_map" translatable="false">Pick from map</string>
+    <string name="tab_title_review_job">Review Job</string>
+    <string name="tab_recently_added_jobs">Recently added jobs</string>
+    <string name="tab_recently_added_tools">Recently added tools</string>
+
+    <!-- Alert Titles -->
+    <string name="alert_title_loading">Please Wait</string>
+    <string name="alert_title_message">Message</string>
+    <string name="alert_title_error">Error</string>
+    <string name="alert_title_warning">Warning</string>
+    <string name="alert_title_success">Success</string>
+    <string name="alert_title_confirm">Confirmation</string>
+    <string name="alert_title_select">Select </string>
+    <string name="alert_title_app_update" translatable="false">New Version</string>
+    <string name="alert_title_upload_image">Select Image</string>
+    <string name="alert_title_upload_document" translatable="false">Select Document File</string>
+    <string name="alert_title_select_state">Select state</string>
+
+    <string name="alert_title_none_net">Connection failed</string>
+
+    <!-- Alert Msgs -->
+    <string name="alert_body_wait">Loading&#8230;</string>
+    <string name="alert_body_downloading">Downloading File&#8230;</string>
+    <string name="alert_body_uploading">Uploading File&#8230;</string>
+    <string name="alert_body_invalid_credentials">You have entered wrong details.Please try again</string>
+    <string name="alert_body_existing_username">UserName Already exists.</string>
+    <string name="alert_body_existing_email">Email Already exists.</string>
+    <string name="alert_body_existing_pan">PAN Already exists.</string>
+    <string name="alert_body_existing_phone">Mobile Number Already exists.</string>
+    <string name="alert_body_logout_confirmation">Are You sure to LogOut.</string>
+    <string name="alert_body_network_error">Please Check Your Network Connection.</string>
+    <string name="alert_body_server_error">Server Error.Please try after some time.</string>
+    <string name="alert_body_pwd_changed">Password Successfully Changed.</string>
+    <string name="alert_body_wrong_current_pwd">Please check credentials.</string>
+    <string name="alert_body_invalid_comapny" translatable="false">Invalid company code.</string>
+    <string name="alert_body_verify_pending">Your account have been not verified.Please verify before LogIn.</string>
+    <string name="alert_body_select_payment" translatable="false">Please select payment option.</string>
+    <string name="alert_body_app_update" translatable="false">A new version of application is available, please update it.</string>
+    <string name="alert_body_app_update_required" translatable="false">A new version of application is available, please update it to keep application working.</string>
+    <string name="alert_body_success_registration" translatable="false">Password for login to our Portal will be send to your Email Id as provided while registration.</string>
+    <string name="alert_body_permission_not_granted">You have not granted all permission which required by this application.</string>
+    <string name="alert_body_application_update_available">New version of application available.Take update for better experience.</string>
+    <string name="alert_body_no_app_for_viewing_file">You may not have a proper app for viewing %s file</string>
+    <string name="alert_body_delete_file">Are you sure to delete this file</string>
+    <string name="alert_body_delete_bank_detail" translatable="false">Are you sure to delete bank detail?</string>
+    <string name="alert_body_upload_file_size">You can upload maximum 5mb file</string>
+    <string name="alert_body_upload_invalid_file">Please upload valid file</string>
+
+    <string name="alert_body_no_net_title">No connection</string>
+    <string name="alert_body_no_net_description">Please enable your internet connection to run the app.</string>
+
+    <!--Invalid input or Selection messages-->
+    <string name="msg_invalid_user_name">UserName</string>
+    <string name="msg_invalid_password">Password</string>
+    <string name="msg_invalid_new_password">New Password</string>
+    <string name="msg_invalid_old_password">Old Password</string>
+    <string name="msg_invalid_confirm_password">Confirm Password</string>
+    <string name="msg_invalid_phone_number">Please enter a valid mobile number</string>
+    <string name="msg_invalid_email" translatable="false">Email ID</string>
+    <string name="msg_invalid_dob">Date Of Birth</string>
+    <string name="msg_invalid_gender">Gender</string>
+    <string name="msg_invalid_state">State</string>
+    <string name="msg_invalid_country">Country</string>
+    <string name="msg_invalid_last_name">Last Name</string>
+    <string name="msg_invalid_father_name">Father Name</string>
+    <string name="msg_invalid_name">Name</string>
+    <string name="msg_invalid_pin_code" translatable="false">Pin Code</string>
+
+    <!-- Btn Text -->
+    <string name="btn_save">Save</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok" translatable="false">OK</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">Register</string>
+    <string name="btn_verify">VERIFY</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_add_bank_account">Add Bank Account</string>
+    <string name="btn_pay">Pay</string>
+    <string name="btn_save_draft">Save Draft</string>
+    <string name="btn_reg">SignUp</string>
+    <string name="btn_logout">LogOut</string>
+    <string name="btn_change_pwd">Change Password</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_review">Review</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_post_job" translatable="false">Post Job</string>
+    <string name="btn_post_tool" translatable="false">Post Tool</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_new_search">New Search</string>
+    <string name="btn_transaction_success">Transaction Succeed</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_upload">Upload</string>
+    <string name="btn_add_document">Add Documents</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_home">Go to Home</string>
+    <string name="btn_recalculate">ReCalculate Tax</string>
+    <string name="btn_retry">Try Again</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_no_thanks">No,Thanks</string>
+    <string name="btn_invite_friend">INVITE FFRIENDS</string>
+    <string name="btn_add_code">ADD REFERRAL CODE</string>
+    <string name="btn_my_points">MY POINTS</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_album">Album</string>
+
+    <!-- DashBoard options label array-->
+    <string name="lbl_start_return_filling">Start Return Filling</string>
+    <string name="lbl_it_return">Income Tax Return</string>
+    <string name="lbl_payment_history">View History</string>
+    <string name="lbl_edit_profile">Edit Profile</string>
+    <string name="lbl_change_pwd">Change Password</string>
+    <string name="lbl_refer_earn" translatable="false">Refer &amp; Earn</string>
+    <string name="lbl_logout">LogOut</string>
+
+    <!--Sign Up Screen -->
+    <string name="lbl_name">Name</string>
+    <string name="lbl_mobile">Mobile Phone</string>
+    <string name="lbl_renter">Client</string>
+    <string name="lbl_lessee">Contractor</string>
+    <string name="lbl_retype_password">Retype Password</string>
+    <string name="msg_signup_error">Please correct the below fields.</string>
+    <string name="lbl_agree_terms_and_conditions">I have read and agree to the terms and conditions</string>
+    <string name="msg_no_8_password">Please enter password at least 8 characters.</string>
+
+    <string name="lbl_rs" translatable="false">\u20B9</string>
+
+    <!-- LogIn Screen -->
+    <string name="lbl_email" translatable="false">E-mail</string>
+    <string name="lbl_email_or_mobile" translatable="false">E-mail or Phone number</string>
+    <string name="lbl_password">Password</string>
+    <string name="msg_email_password_error">Sorry, but submitted email or password are not correct. Please try again.</string>
+    <string name="msg_email_mobile_password_error">Sorry, but submitted email, phone number or password are not correct. Please try again.</string>
+    <string name="lbl_forget_pwd">Forgot Password</string>
+    <string name="lbl_remember_me">Remember me</string>
+
+    <!-- Forget Pwd Screen -->
+    <string name="msg_forgot_pwd">Please type your registered email and we will send you a link where you can recover password</string>
+    <string name="msg_forgot_email_error">Sorry, but submitted email is not registered in our system. Try again.</string>
+    <string name="msg_password_match_error">Sorry, passwords you typed do not match. Try again.</string>
+    <string name="password_changed">You successfully changed your password. You can login now.</string>
+    <string name="lbl_reg_email">Your registered e-mail</string>
+    <string name="lbl_email_not_found">E-mail not found</string>
+
+    <string name="msg_otp_verify">Otp sent to your registered email address. Please check your email for 6 digit verification code and enter here</string>
+
+    <!-- Chane PWD Screen -->
+    <string name="hint_old_pwd">Enter Old Password</string>
+    <string name="hint_new_pwd">Enter New Password</string>
+    <string name="hint_confirm_new_pwd">Confirm New Password</string>
+    <string name="alert_title_pwd_changed">Your Password Changed Successfully.</string>
+
+    <!-- PersonalInfo Screen -->
+    <string name="hint_fisrt_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_father_name">Father Name</string>
+
+    <!-- Login Screen !-->
+    <string name="none_added_offer">None recent jobs to display. Please create new job.</string>
+    <string name="none_added_tool">None recent tools to display. Please create new tool.</string>
+    <string name="none_searched_offer">None recent jobs to display. Please create new search.</string>
+
+    <!-- Searched offer detail screen -->
+    <string name="notify_to_renter">We will notify the renter you are interested in their offer and want to make an appointment.</string>
+    <string name="another_closest">Another closest similar properties</string>
+    <string name="title_activity_verify_otp" translatable="false">ActivityVerifyOtp</string>
+    <string name="title_activity_otp_verification" translatable="false">OtpVerificationActivity</string>
+    <string name="title_activity_edit_property" translatable="false">EditPropertyActivity</string>
+
+    <string name="storage_permission_rationale">"Storage permission is needed for fetching images from Gallery."</string>
+    <string name="lbl_contact_person">Contact Person: </string>
+    <string name="lbl_received_questions">Received questions</string>
+    <string name="lbl_people_who_are_interested">People who are interested</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">News</string>
+
+    <!-- Review screen -->
+    <string name="lbl_job_name">Job Name</string>
+    <string name="lbl_job_marks">Marks</string>
+    <string name="hint_description">Description</string>
+    <string name="lbl_employer_review">Employer review</string>
+    <string name="lbl_contact_person_review">Contact Person review</string>
+
+    <!-- Confirm screen -->
+    <string name="lbl_confirm_job_remove">Remove Job?</string>
+    <string name="lbl_confirm_tool_remove">Remove Tool?</string>
+
+    <!-- Admin bar screen -->
+    <string name="lbl_jobs">Jobs</string>
+    <string name="lbl_favourites">My favorites</string>
+    <string name="lbl_my_account">My account</string>
+    <string name="lbl_notification_settings">Notification settings</string>
+    <string name="lbl_language_settings">Language settings</string>
+    <string name="lbl_switch_account">Switch account</string>
+    <string name="txt_employer">Employer</string>
+    <string name="txt_job_seeker">Job seeker</string>
+    <string name="lbl_chats">Chats</string>
+    <string name="lbl_contacts">Contacts</string>
+
+    <!-- Add job by address screen -->
+    <string name="hint_price">Price</string>
+    <string name="hint_city_town_name">City/Town Name</string>
+    <string name="hint_street_name">Street Name</string>
+    <string name="txt_upload_images_and_condition">Upload Images (you can add 8 more)</string>
+    <string name="txt_upload_images">Upload Images</string>
+    <string name="txt_you_can_8_more">(you can add 8 more)</string>
+    <string name="txt_my_jobs">My jobs</string>
+
+    <!--Notification settings screen-->
+    <string name="lbl_boarding">Boarding</string>
+    <string name="lbl_jointing">Jointing</string>
+    <string name="lbl_screed">Screed</string>
+    <string name="lbl_plastering">Plastering</string>
+    <string name="lbl_turn_on_of_all_notifications">Turn on/off all notifications of the app</string>
+
+    <string name="lbl_day_work">Day work</string>
+    <string name="lbl_price_work">Price work</string>
+    <string name="lbl_new_tool">New tool</string>
+    <string name="lbl_used_tool">Used tool</string>
+
+    <string name="country_england" translatable="false">England</string>
+    <string name="country_scotland" translatable="false">Scotland</string>
+    <string name="country_northern_ireland" translatable="false">Northern Ireland</string>
+    <string name="country_wales" translatable="false">Wales(Under UK)</string>
+    <string name="country_united_states" translatable="false">United States</string>
+    <string name="country_austria" translatable="false">Austria</string>
+    <string name="country_belgium" translatable="false">Belgium</string>
+    <string name="country_bulgaria" translatable="false">Bulgaria</string>
+    <string name="country_france" translatable="false">France</string>
+    <string name="country_germany" translatable="false">Germany</string>
+    <string name="country_italy" translatable="false">Italy</string>
+    <string name="country_luxembourg" translatable="false">Luxembourg</string>
+    <string name="country_netherlands" translatable="false">Netherlands</string>
+    <string name="country_romania" translatable="false">Romania</string>
+    <string name="country_spain" translatable="false">Spain</string>
+
+    <!-- QuickBlox -->
+    <string name="menu_new_chat">New Chat</string>
+    <string name="menu_chat_info">Chat info</string>
+    <string name="menu_add_users_to_chat">Add Users to Chat</string>
+    <string name="menu_leave_chat">Leave Chat</string>
+    <string name="menu_delete_chat">Delete Chat</string>
+    <string name="menu_dialogs_logout">Logout</string>
+    <string name="menu_dialogs_delete">Delete</string>
+    <string name="menu_select_people_done">Done</string>
+
+    <string name="dlg_loading">Loading</string>
+    <string name="dlg_restoring_chat_session">Restoring chat session…</string>
+    <string name="dlg_restoring_chat_session_logout">Restoring session and logout</string>
+    <string name="create_chat">Creating chat…</string>
+    <string name="dlg_login">Login…</string>
+
+    <string name="placeholder_username_you">%s (you)</string>
+    <string name="error_recreate_session">Login Chat error</string>
+
+    <string name="splash_create_session_error">Create session errors:</string>
+
+    <string name="login_select_user_for_login">Select User for Login to Chat</string>
+    <string name="login_cant_obtain_users">Can\'t obtain users errors</string>
+    <string name="login_chat_login_error">Login Chat error. Please relogin. Error</string>
+
+    <string name="dialogs_logged_in_as">Logged in as %s</string>
+    <string name="dialogs_creation_error">Dialog creation errors</string>
+    <string name="dialogs_deletion_error">Dialog deletion errors</string>
+    <string name="dialogs_list_hint">Select a Dialog to Chat</string>
+    <string name="dialogs_get_error">Get dialogs errors</string>
+
+    <string name="select_users_list_hint">Select Users you want to chat</string>
+    <string name="select_users_create_chat">Create new chat</string>
+    <string name="select_users_edit_chat">Add Users to chat</string>
+    <string name="select_users_get_users_error">Get users errors</string>
+    <string name="select_users_choose_users">Please, choose at least one participant</string>
+
+    <string name="chat_sticker">Sticker</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_edit_text_hint">Message</string>
+    <string name="chat_me">Me</string>
+    <string name="chat_friend">Friend</string>
+    <string name="chat_join_error">Error join group chat</string>
+    <string name="chat_send_message_error">Failed to send a message</string>
+    <string name="chat_load_history_error">Load chat history errors</string>
+    <string name="chat_load_users_error">Load chat users errors</string>
+    <string name="chat_attachment_error">Can\'t load chosen file</string>
+    <string name="chat_attachment">Attachment</string>
+    <string name="chat_empty_you_are_alone_here">You\'re all alone out here.</string>
+    <string name="chat_empty_start_new_chat">Start new chat.</string>
+    <string name="chat_unsupported_type">Unsupported dialog type</string>
+    <string name="chat_wait_for_attachments_to_upload">Wait for all attachments to upload</string>
+    <string name="notification_title">Quickblox Chat Notification</string>
+    <string name="connection_error">Chat connection has been dropped</string>
+    <string name="reconnect_alert">Reconnecting in %s seconds</string>
+
+    <string name="chat_info">Chat info</string>
+    <string name="chat_info_add_people_error">Add people errors</string>
+
+    <string name="group_chat_join_error">Could not join chat, errors:</string>
+    <string name="public_group_chat_cannot_be_deleted">Public Group chat can be deleted only by owner</string>
+    <string name="error_leave_chat">Error leaving room</string>
+
+    <string name="please_wait">Please wait…</string>
+
+    <string name="dlg_error">Error</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_choose_image_from">Select photo from…</string>
+    <string name="dlg_retry">Retry</string>
+
+    <string name="init_configs_error">Initializing configs error</string>
+
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="splash_app_version">v %s</string>
+
+    <string name="error_parsing_configs">Parsing sample\'s configs error</string>
+</resources>

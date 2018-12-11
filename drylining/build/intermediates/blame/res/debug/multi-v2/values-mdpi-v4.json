@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Dryling\\Yagnesh\\drylining\\drylining\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mdpi-v4\\values-mdpi-v4.xml",
+            "map": [
+                {
+                    "source": "E:\\Dryling\\Yagnesh\\drylining\\drylining\\src\\main\\res\\values-mdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "18,19,15,8,13,7,12,6,11,4,5,16,14,10,3",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "762,807,642,319,533,272,480,224,428,136,183,699,585,372,85",
+                        "endColumns": "44,50,56,51,51,46,52,47,51,46,40,61,56,55,50",
+                        "endOffsets": "802,853,694,366,580,314,528,267,475,178,219,756,637,423,131"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,100,151,208,260,312,359,412,460,512,559,600,662,719,775",
+                        "endColumns": "44,50,56,51,51,46,52,47,51,46,40,61,56,55,50",
+                        "endOffsets": "95,146,203,255,307,354,407,455,507,554,595,657,714,770,821"
+                    }
+                }
+            ]
+        }
+    ]
+}

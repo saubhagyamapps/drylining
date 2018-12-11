@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/large_padding_margin"
+        android:paddingRight="@dimen/large_padding_margin"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/title_jobs_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_favourite" />
+
+            <TextView
+                android:id="@+id/admin_txt_offer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_jobs"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_favorite_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_favourite" />
+
+            <TextView
+                android:id="@+id/admin_txt_favorite_offer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_favourites"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_my_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_person_gray" />
+
+            <TextView
+                android:id="@+id/admin_txt_my_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_my_account"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_my_chats"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/icon_gray"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_chats" />
+
+            <TextView
+                android:id="@+id/admin_txt_my_chats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_chats"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/admin_img_my_contacts"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/icon_gray"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_contacts" />
+
+            <TextView
+                android:id="@+id/admin_txt_my_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_contacts"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_notify_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_notifaction_icon" />
+
+            <TextView
+                android:id="@+id/admin_txt_notify_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_notification_settings"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_lang_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/admin_txt_lang_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_language_settings"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sp_LanguageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_filled"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MySpinnerTheme" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:background="@color/color_gray_e5"
+            android:orientation="horizontal"
+            android:visibility="gone"></LinearLayout>
+
+        <TextView
+            android:id="@+id/text_account_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_switch_account"
+            android:textColor="@color/color_gray_66"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:gravity="center_horizontal|center"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/admin_cb_renter"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:button="@drawable/bg_checkbox"
+                    android:checked="true" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/admin_txt_chk_renter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/txt_employer"
+                    android:textColor="@color/color_unchecked"
+                    android:textSize="@dimen/edit_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".50"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/admin_cb_lessee"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:checked="false" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/admin_txt_chk_lessee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkBoxLessee"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/txt_job_seeker"
+                    android:textColor="#1a1a1a"
+                    android:textSize="@dimen/edit_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:background="@color/color_gray_e5"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/admin_img_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                app:srcCompat="@drawable/ic_key_gray" />
+
+            <TextView
+                android:id="@+id/admin_txt_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                android:gravity="center_vertical"
+                android:text="@string/btn_logout"
+                android:textColor="@color/color_gray_66"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_fill_spave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</LinearLayout>

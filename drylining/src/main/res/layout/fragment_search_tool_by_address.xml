@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/large_padding_margin"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/lbl_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_error"
+            android:padding="@dimen/large_padding_margin"
+            android:text="ERROR!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/msg_txt_size"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/msg_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Sorry but submitted email or password are not correct. Please try again."
+            android:textColor="@color/err_msg_color"
+            android:paddingTop="@dimen/large_padding_margin"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txt_post_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:background="@drawable/bg_filled"
+            android:completionThreshold="1"
+            android:hint="@string/lbl_name"
+            android:inputType="text"
+            android:padding="@dimen/large_padding_margin"
+            android:textAppearance="@style/EditTextStyle"
+            android:textSize="@dimen/edit_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/sp_PropContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:background="@drawable/bg_filled"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spinnerProperty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MySpinnerTheme"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/large_padding_margin"
+            android:text="Price range"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/price_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:paddingTop="@dimen/large_padding_margin"
+            app:bar_color="@color/color_gray_cc"
+            app:bar_highlight_color="@color/color_gray_99"
+            app:left_thumb_color="@color/color_gray_99"
+            app:right_thumb_color="@color/color_gray_99"/>
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_minPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="min"
+                android:textColor="@color/upload_button"
+                android:textSize="@dimen/mid_btn_txt_size" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_maxPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="max"
+                android:textColor="@color/upload_button"
+                android:textSize="@dimen/mid_btn_txt_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_address_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding_margin"
+            android:background="@drawable/btn_filled"
+            android:padding="@dimen/big_btn_padding"
+            android:stateListAnimator="@null"
+            android:text="@string/btn_search"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_filled_txt_color"
+            android:textSize="@dimen/big_btn_txt_size" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Придвижване към „Начало“"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Придвижване нагоре"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Още опции"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Вижте всички"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Изберете приложение"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"ИЗКЛ."</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ВКЛ."</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Търсете…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Изчистване на заявката"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Заявка за търсене"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Търсене"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Изпращане на заявката"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Гласово търсене"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Споделяне със:"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Споделяне със: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Свиване"</string>
+    <string name="alert_body_application_update_available">Нова версия на приложението. Направете актуализация за по-добър опит.</string>
+    <string name="alert_body_delete_file">Наистина ли искате да изтриете този файл</string>
+    <string name="alert_body_downloading">Изтегляне на файла ...</string>
+    <string name="alert_body_existing_email">Имейлът вече съществува.</string>
+    <string name="alert_body_existing_pan">PAN вече съществува.</string>
+    <string name="alert_body_existing_phone">Мобилният номер вече съществува.</string>
+    <string name="alert_body_existing_username">Потребителското име вече съществува.</string>
+    <string name="alert_body_invalid_credentials">Въвели сте грешни детайли.Моля, опитайте отново</string>
+    <string name="alert_body_logout_confirmation">Сигурни ли сте за LogOut.</string>
+    <string name="alert_body_network_error">Моля, проверете вашата мрежова връзка.</string>
+    <string name="alert_body_no_app_for_viewing_file">Възможно е да нямате подходящо приложение за преглед на файла% s</string>
+    <string name="alert_body_no_net_description">Моля, активирайте своята интернет връзка, за да стартирате приложението.</string>
+    <string name="alert_body_no_net_title">Няма връзка</string>
+    <string name="alert_body_permission_not_granted">Не сте предоставили всички разрешения, които се изискват от това приложение.</string>
+    <string name="alert_body_pwd_changed">Паролата е променена успешно.</string>
+    <string name="alert_body_server_error">Server Error.Please опитайте след известно време.</string>
+    <string name="alert_body_upload_file_size">Можете да качвате максимум 5mb файл</string>
+    <string name="alert_body_upload_invalid_file">Моля, качете валиден файл</string>
+    <string name="alert_body_uploading">Качване на файл ...</string>
+    <string name="alert_body_verify_pending">Профилът ви не е потвърден.Моля, проверете преди да сте влезли в профила си.</string>
+    <string name="alert_body_wait">Зареждане…</string>
+    <string name="alert_body_wrong_current_pwd">Моля, проверете идентификационните данни.</string>
+    <string name="alert_title_confirm">потвърждаване</string>
+    <string name="alert_title_error">грешка</string>
+    <string name="alert_title_loading">Моля Изчакай</string>
+    <string name="alert_title_message">съобщение</string>
+    <string name="alert_title_none_net">Свързването е неуспешно</string>
+    <string name="alert_title_pwd_changed">Вашата парола се променя успешно.</string>
+    <string name="alert_title_select">Изберете</string>
+    <string name="alert_title_select_state">Изберете състояние</string>
+    <string name="alert_title_success">успех</string>
+    <string name="alert_title_upload_image">Изберете Изображение</string>
+    <string name="alert_title_warning">Внимание</string>
+    <string name="another_closest">Друга най-близки подобни свойства</string>
+    <string name="btn_accept">приемам</string>
+    <string name="btn_add">Добави</string>
+    <string name="btn_add_bank_account">Добавяне на банкова сметка</string>
+    <string name="btn_add_code">ДОПЪЛНИТЕЛЕН КОДЕКС ЗА ЗАЯВКА</string>
+    <string name="btn_add_document">Добавяне на документи</string>
+    <string name="btn_album">албум</string>
+    <string name="btn_apply">Приложи</string>
+    <string name="btn_back">обратно</string>
+    <string name="btn_cancel">Отказ</string>
+    <string name="btn_change_pwd">Промяна на паролата</string>
+    <string name="btn_clear">ясно</string>
+    <string name="btn_close">Близо</string>
+    <string name="btn_confirm">потвърждавам</string>
+    <string name="btn_delete">Изтрий</string>
+    <string name="btn_edit">редактиране</string>
+    <string name="btn_finish">завършек</string>
+    <string name="btn_home">Отидете на дома</string>
+    <string name="btn_invite_friend">ПОКАЖЕТЕ СВОБОДИТЕ</string>
+    <string name="btn_login">Влизам</string>
+    <string name="btn_logout">Излез от профила си</string>
+    <string name="btn_my_points">МОИТЕ ТОЧКИ</string>
+    <string name="btn_new_search">Ново търсене</string>
+    <string name="btn_no">Не</string>
+    <string name="btn_no_thanks">Не благодаря</string>
+    <string name="btn_pay">плащам</string>
+    <string name="btn_recalculate">Преизчисляване на данъка</string>
+    <string name="btn_refresh">Обновяване</string>
+    <string name="btn_reg">Регистрирай се</string>
+    <string name="btn_remove">Премахване</string>
+    <string name="btn_retry">Опитай пак</string>
+    <string name="btn_review">преглед</string>
+    <string name="btn_save">Запази</string>
+    <string name="btn_save_draft">Чернова</string>
+    <string name="btn_search">Търсене</string>
+    <string name="btn_signup">Регистрирам</string>
+    <string name="btn_submit">Изпращане</string>
+    <string name="btn_transaction_success">Транзакцията е успешна</string>
+    <string name="btn_update">Актуализация</string>
+    <string name="btn_upload">Качи</string>
+    <string name="btn_verify">ПРОВЕРЕТЕ</string>
+    <string name="btn_yes">да</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Активиране"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> няма да работи, освен ако не активирате услугите за Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Активиране на услугите за Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Инсталиране"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> няма да се изпълнява, тъй като услугите за Google Play не са инсталирани на устройството ви."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Изтегляне на услугите за Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Наличност на услугите за Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Грешка в услугите за Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> има проблеми с услугите за Google Play. Моля, опитайте отново."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> няма да се изпълнява, тъй като услугите за Google Play не се поддържат от устройството ви."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Актуализиране"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> няма да се изпълнява, освен ако не актуализирате услугите за Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Актуализиране на услугите за Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> няма да се изпълнява без услугите за Google Play. Понастоящем те се актуализират."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Необходима е нова версия на услугите за Google Play. Скоро тя ще се актуализира автоматично."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Отваряне на телефона"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Вход"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Вход с Google"</string>
+    <string name="default_notification_channel_name">Новини</string>
+    <string name="exo_controls_fastforward_description">"Превъртане напред"</string>
+    <string name="exo_controls_next_description">"Следващ запис"</string>
+    <string name="exo_controls_pause_description">"Пауза"</string>
+    <string name="exo_controls_play_description">"Пускане"</string>
+    <string name="exo_controls_previous_description">"Предишен запис"</string>
+    <string name="exo_controls_repeat_all_description">"Повтаряне на всички"</string>
+    <string name="exo_controls_repeat_off_description">"Без повтаряне"</string>
+    <string name="exo_controls_repeat_one_description">"Повтаряне на един елемент"</string>
+    <string name="exo_controls_rewind_description">"Превъртане назад"</string>
+    <string name="exo_controls_stop_description">"Спиране"</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Разни"</string>
+    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Разни"</string>
+    <string name="hint_city_town_name">Име на града / града</string>
+    <string name="hint_confirm_new_pwd">Потвърждение на новата парола</string>
+    <string name="hint_description">описание</string>
+    <string name="hint_father_name">Бащино име</string>
+    <string name="hint_fisrt_name">Първо име</string>
+    <string name="hint_last_name">Фамилия</string>
+    <string name="hint_new_pwd">Въведете нова парола</string>
+    <string name="hint_old_pwd">Въведете старата парола</string>
+    <string name="hint_price">Цена</string>
+    <string name="hint_street_name">Име на улица</string>
+    <string name="lbl_agree_terms_and_conditions">Прочетох и се съгласявам с условията</string>
+    <string name="lbl_boarding">пансион</string>
+    <string name="lbl_change_pwd">Промяна на паролата</string>
+    <string name="lbl_chats">Разговори</string>
+    <string name="lbl_confirm_job_remove">Премахване на заданието?</string>
+    <string name="lbl_confirm_tool_remove">Премахване на инструмента?</string>
+    <string name="lbl_contact_person">ЛИЦЕ ЗА КОНТАКТ :</string>
+    <string name="lbl_contact_person_review">Преглед на лице за контакт</string>
+    <string name="lbl_contacts">Контакти</string>
+    <string name="lbl_day_work">Дневна работа</string>
+    <string name="lbl_edit_profile">Редактирай профил</string>
+    <string name="lbl_email_not_found">имейл не бе намерена</string>
+    <string name="lbl_employer_review">Преглед на работодателя</string>
+    <string name="lbl_favourites">Любимите ми</string>
+    <string name="lbl_forget_pwd">Забравена парола</string>
+    <string name="lbl_it_return">Данъчно възстановяване</string>
+    <string name="lbl_job_marks">Marks</string>
+    <string name="lbl_job_name">Име на работа</string>
+    <string name="lbl_jointing">фугиране</string>
+    <string name="lbl_language_settings">Езикови настройки</string>
+    <string name="lbl_lessee">предприемач</string>
+    <string name="lbl_logout">Излез от профила си</string>
+    <string name="lbl_mobile">Мобилен телефон</string>
+    <string name="lbl_my_account">Моята сметка</string>
+    <string name="lbl_name">име</string>
+    <string name="lbl_new_tool">Нов инструмент</string>
+    <string name="lbl_no_records">Няма записи</string>
+    <string name="lbl_notification_settings">Настройки за известията</string>
+    <string name="lbl_password">парола</string>
+    <string name="lbl_payment_history">Преглед на историята</string>
+    <string name="lbl_people_who_are_interested">Хора, които се интересуват</string>
+    <string name="lbl_plastering">Мазилки</string>
+    <string name="lbl_price_work">Ценова работа</string>
+    <string name="lbl_received_questions">Получени въпроси</string>
+    <string name="lbl_reg_email">Вашият регистриран имейл</string>
+    <string name="lbl_remember_me">Помни ме</string>
+    <string name="lbl_renter">клиент</string>
+    <string name="lbl_retype_password">Повторете паролата</string>
+    <string name="lbl_screed">тирада</string>
+    <string name="lbl_select_file">Моля изберете</string>
+    <string name="lbl_start_return_filling">Започнете пълненето на връщане</string>
+    <string name="lbl_switch_account">Превключете профила</string>
+    <string name="lbl_turn_on_of_all_notifications">Включване / изключване на всички известия за приложението</string>
+    <string name="lbl_used_tool">Използван инструмент</string>
+    <string name="msg_email_mobile_password_error">За съжаление, но изпратените имейли, телефонен номер или парола не са правилни. Моля, опитайте отново.</string>
+    <string name="msg_email_password_error">За съжаление, но изпратените имейл или парола не са правилни. Моля, опитайте отново.</string>
+    <string name="msg_forgot_email_error">За съжаление, но изпратеният имейл не е регистриран в нашата система. Опитай пак.</string>
+    <string name="msg_forgot_pwd">Моля, въведете регистрирания си имейл и ние ще ви изпратим връзка, където можете да възстановите паролата си</string>
+    <string name="msg_invalid_confirm_password">потвърди парола</string>
+    <string name="msg_invalid_country">Държава</string>
+    <string name="msg_invalid_dob">Дата на раждане</string>
+    <string name="msg_invalid_father_name">Бащино име</string>
+    <string name="msg_invalid_gender">пол</string>
+    <string name="msg_invalid_last_name">Фамилия</string>
+    <string name="msg_invalid_name">име</string>
+    <string name="msg_invalid_new_password">нова парола</string>
+    <string name="msg_invalid_old_password">Стара парола</string>
+    <string name="msg_invalid_password">парола</string>
+    <string name="msg_invalid_phone_number">Моля, въведете валиден мобилен номер</string>
+    <string name="msg_invalid_state">състояние</string>
+    <string name="msg_invalid_user_name">потребителско име</string>
+    <string name="msg_otp_verify">Отп изпрати до регистрирания ви имейл адрес. Моля, проверете имейла си за 6-цифрен код за потвърждение и въведете тук</string>
+    <string name="msg_password_match_error">За съжаление въведените от вас пароли не съвпадат. Опитай пак.</string>
+    <string name="msg_signup_error">Моля, коригирайте долните полета.</string>
+    <string name="none_added_offer">Няма скорошни задания за показване. Моля, създайте нова работа.</string>
+    <string name="none_added_tool">Няма скорошни инструменти за показване. Моля, създайте нов инструмент.</string>
+    <string name="none_searched_offer">Няма скорошни задания за показване. Моля, създайте ново търсене.</string>
+    <string name="notify_to_renter">Ще уведомим наемателя, който ви интересува от офертата си, и искате да направите среща.</string>
+    <string name="password_changed">Променихте успешно паролата си. Можете да влезете сега.</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Търсене"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="storage_permission_rationale">Необходимо е разрешение за съхранение за извличане на изображения от Галерията.</string>
+    <string name="tab_recently_added_jobs">Последно добавени работни места</string>
+    <string name="tab_recently_added_tools">Последно добавени инструменти</string>
+    <string name="tab_title_add_new_tool">Пазарно място</string>
+    <string name="tab_title_add_offer_by_address">Post Job</string>
+    <string name="tab_title_add_tool_by_address">Инструмент за публикуване</string>
+    <string name="tab_title_login">Влизам</string>
+    <string name="tab_title_modify_offer_by_address">Промяна на заданието</string>
+    <string name="tab_title_modify_tool_by_address">Промяна на инструмента</string>
+    <string name="tab_title_review_job">Преглед на заданието</string>
+    <string name="tab_title_seach_offer_by_address">Търсене на работа</string>
+    <string name="tab_title_seach_tool_by_address">Инструмент за търсене</string>
+    <string name="tab_title_signup">Регистрирам</string>
+    <string name="title_activity_change_password">нова парола</string>
+    <string name="title_activity_change_password_success">паролата е сменена</string>
+    <string name="title_activity_forgot_password">Забравена парола</string>
+    <string name="title_activity_login">Влизам</string>
+    <string name="title_activity_notifications">Известия</string>
+    <string name="title_activity_search_results">Резултати от търсенето</string>
+    <string name="title_activity_sign_up">Регистрирай се</string>
+    <string name="txt_employer">работодател</string>
+    <string name="txt_job_seeker">Търсещ работа</string>
+    <string name="txt_my_jobs">Моите работни места</string>
+    <string name="txt_upload_images">Качване на изображения</string>
+    <string name="txt_upload_images_and_condition">Качване на изображения (можете да добавите още 8)</string>
+    <string name="txt_you_can_8_more">(можете да добавите още 8)</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    style="@style/MatchParent">
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/border_gray">
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_tab_search"/>
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:layout_toRightOf="@+id/ic_search"
+            android:hint="@string/btn_search"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_select_users"
+        android:layout_below="@+id/search_bar"
+        style="@style/ListViewWithoutDividerStyle" />
+
+    <ProgressBar
+        android:id="@+id/progress_select_users"
+        style="@style/CenterProgressBarStyle" />
+</RelativeLayout>

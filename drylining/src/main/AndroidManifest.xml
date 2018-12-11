@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.drylining">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:required="false" />
+
+    <application
+        android:name=".DRYLINING"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".custom.CustomWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.SearchedOffersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchedResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddedOffersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.SearchedOfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddedOfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddNewOfferActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.SearchNewOfferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OtpVerificationActivity"
+            android:label="@string/title_activity_otp_verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.EditPropertyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityModifyOffer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.MultiPhotoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NoInternetMessage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/alert_title_none_net"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".ui.ActivityNewQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityConversationsLessee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityConversationsRenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityRemoveOffer"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.ActivityNotifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityFavoriteOffers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityMyAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ActivityNotifySettings"
+            android:screenOrientation="portrait" />
+
+        <!-- FCM -->
+        <service android:name=".fcm.MyFcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/app_bg_color" />
+        <!-- FCM END -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.app.drylining.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlS2EZwDoAJjsQ3ftM7X1hs3XOyjymh_4" />
+
+        <activity android:name=".ui.DashboardActivity" />
+        <activity android:name=".ui.AddNewToolActivity" />
+        <activity android:name=".ui.AddedToolDetailActivity" />
+        <activity android:name=".ui.ActivityModifyTool" />
+        <activity android:name=".ui.JobReviewActivity" />
+        <activity android:name=".ui.ActivityRemoveTool" />
+        <activity android:name=".ui.SearchActivity" />
+        <activity android:name=".ui.SearchedToolDetailActivity" />
+        <activity android:name=".ui.SearchNewToolActivity" />
+        <activity android:name=".ui.SearchedToolResultActivity"></activity>
+        <activity android:name=".ui.OTPAcivity"></activity>
+
+        <activity
+            android:name=".chat.ui.activity.SelectUsersActivity"
+            android:theme="@style/ChatActivityTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".chat.ui.activity.DialogsActivity"
+            android:theme="@style/ChatActivityTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".chat.ui.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".chat.ui.activity.ChatInfoActivity"
+            android:label="@string/chat_info"
+            android:theme="@style/ChatActivityTheme"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".chat.ui.activity.AttachmentImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

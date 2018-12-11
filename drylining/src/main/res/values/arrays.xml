@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>John Doe</item>
+        <item>John Doe</item>
+        <item>John Doe</item>
+        <item>John Doe</item>
+    </string-array>
+
+    <string-array name="country_names">
+        <item>@string/country_england</item>
+        <item>@string/country_scotland</item>
+        <item>@string/country_northern_ireland</item>
+        <item>@string/country_wales</item>
+        <item>@string/country_united_states</item>
+        <item>@string/country_austria</item>
+        <item>@string/country_belgium</item>
+        <item>@string/country_bulgaria</item>
+        <item>@string/country_france</item>
+        <item>@string/country_germany</item>
+        <item>@string/country_italy</item>
+        <item>@string/country_luxembourg</item>
+        <item>@string/country_netherlands</item>
+        <item>@string/country_romania</item>
+        <item>@string/country_spain</item>
+    </string-array>
+
+    <string-array name="property_types">
+        <item>@string/lbl_boarding</item>
+        <item>@string/lbl_jointing</item>
+        <item>@string/lbl_screed</item>
+        <item>@string/lbl_plastering</item>
+    </string-array>
+
+    <string-array name="tool_types">
+        <item>@string/lbl_new_tool</item>
+        <item>@string/lbl_used_tool</item>
+        <!--<item>Room</item>-->
+    </string-array>
+
+    <string-array name="currency_types">
+        <item>Pound(£)</item>
+        <item>EUR(€)</item>
+        <item>USD($)</item>
+        <!--<item>4</item>
+        <item>5</item>
+        <item>6 and more</item>-->
+    </string-array>
+
+    <string-array name="property_extra_spaces">
+        <item>@string/lbl_day_work</item>
+        <item>@string/lbl_price_work</item>
+<!--        <item>Parking place</item>
+        <item>Both</item>-->
+    </string-array>
+
+    <string-array name="search_range">
+        <item>1km</item>
+        <item>5km</item>
+        <item>15km</item>
+        <item>30km</item>
+        <item>50km</item>
+    </string-array>
+
+    <string-array name="language_names">
+        <item>Bulgarian(BG)</item>
+        <!--<item>Czech(CS)</item>
+        <item>Danish(DA)</item>-->
+        <item>German(DE)</item>
+        <!--<item>Greek(EL)</item>-->
+        <item>English(EN)</item>
+        <item>Spanish(ES)</item>
+        <!--<item>Estonian(ET)</item>
+        <item>Finnish(FI)</item>-->
+        <item>French(FR)</item>
+        <!--<item>Irish(GA)</item>
+        <item>Croatian(HR)</item>
+        <item>Hungarian(HU)</item>-->
+        <item>Italian(IT)</item>
+        <!--<item>Lithuanian(LT)</item>
+        <item>Latvian(LV)</item>
+        <item>Maltese(MT)</item>-->
+        <item>Dutch(NL)</item>
+        <!--<item>Polish(PL)</item>
+        <item>Portuguese(PT)</item>-->
+        <item>Romanian(RO)</item>
+        <!--<item>Slovak(SK)</item>
+        <item>Slovenian(SL)</item>
+        <item>Swedish(SV)</item>-->
+    </string-array>
+
+    <string-array name="dlg_image_pick">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+</resources>

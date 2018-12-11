@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mukesh:otpview-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/otpview-1.0.1.aar/5e266880c46f498c98f8ebfd2498e40a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/otpview-1.0.1.aar/5e266880c46f498c98f8ebfd2498e40a/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mukesh/otpview/1.0.1/d54b9f33eea7529d01b7335ed6d068b8915f419/otpview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="@color/app_board_color"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/large_padding_margin"
+            android:paddingTop="@dimen/small_padding_margin"
+            android:text="@string/lbl_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/edit_text_size" />
+
+        <TextView
+            android:id="@+id/txt_person_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/large_padding_margin"
+            android:paddingBottom="@dimen/small_padding_margin"
+            android:text="@string/lbl_mobile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/edit_text_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_is_confirmed"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".40"
+        android:background="@color/primary_dark_color"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/small_padding_margin"
+        android:layout_marginBottom="@dimen/small_padding_margin"
+        android:layout_marginRight="@dimen/small_padding_margin"
+        android:paddingBottom="@dimen/small_padding_margin"
+        android:paddingTop="@dimen/small_padding_margin"
+        android:text="@string/btn_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/edit_text_size" />
+</LinearLayout>

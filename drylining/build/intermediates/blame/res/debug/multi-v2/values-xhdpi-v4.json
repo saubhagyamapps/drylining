@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Dryling\\Yagnesh\\drylining\\drylining\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\crystalrangeseekbar-1.1.1.aar\\87f10f11f7bfebfac21c4498ef6e3b21\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,106,156,200",
+                        "endColumns": "50,49,43,42",
+                        "endOffsets": "101,151,195,238"
+                    },
+                    "to": {
+                        "startLines": "3,4,22,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "109,160,1112,1156",
+                        "endColumns": "50,49,43,42",
+                        "endOffsets": "155,205,1151,1194"
+                    }
+                },
+                {
+                    "source": "E:\\Dryling\\Yagnesh\\drylining\\drylining\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "21,30,31,29,18,19,15,8,13,7,28,12,6,11,4,25,24,5,16,14,10,3",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "860,1206,1265,1142,763,808,643,320,534,273,1076,481,225,429,137,997,940,184,700,586,373,85",
+                        "endColumns": "53,58,55,63,44,50,56,51,51,46,65,52,47,51,46,54,56,40,61,56,55,51",
+                        "endOffsets": "909,1260,1316,1201,803,854,695,367,581,315,1137,529,268,476,179,1047,992,220,757,638,424,132"
+                    },
+                    "to": {
+                        "startLines": "2,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,24,25,26,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,210,269,325,389,434,485,542,594,646,693,759,812,860,912,959,1014,1071,1199,1261,1318,1374",
+                        "endColumns": "53,58,55,63,44,50,56,51,51,46,65,52,47,51,46,54,56,40,61,56,55,51",
+                        "endOffsets": "104,264,320,384,429,480,537,589,641,688,754,807,855,907,954,1009,1066,1107,1256,1313,1369,1421"
+                    }
+                }
+            ]
+        }
+    ]
+}

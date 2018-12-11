@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="@dimen/splash_icon_width_height"
+        android:layout_height="@dimen/splash_icon_width_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/splash_icon_margin_top"
+        android:scaleType="fitCenter"
+        android:src="@drawable/loading_logo" />
+
+    <lal.adhish.gifprogressbar.GifView
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/splash_icon_margin_top"
+        android:layout_height="@dimen/splash_icon_margin_top"
+        android:layout_below="@+id/splash"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/very_high_large_padding_margin" />
+
+</RelativeLayout>

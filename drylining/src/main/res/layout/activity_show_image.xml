@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    style="@style/MatchParent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="image">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image_full_view"
+        style="@style/MatchParent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_show_image"
+        style="@style/WrapContent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

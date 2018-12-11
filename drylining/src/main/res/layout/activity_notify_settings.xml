@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    tools:context=".ui.SearchedOffersActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/cell_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/app_board"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_notification_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".60"
+                    android:gravity="center"
+                    android:text="@string/lbl_notification_settings"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tab_txt_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topBar"
+                android:orientation="vertical"
+                android:padding="@dimen/large_padding_margin">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/lbl_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_success"
+                    android:padding="@dimen/large_padding_margin"
+                    android:text="Changes saved"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/msg_txt_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_on_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_on_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_turn_on_of_all_notifications"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/setting_cb_boarding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:button="@drawable/bg_setting_checkbox" />
+
+                <TextView
+                    android:id="@+id/setting_txt_boarding"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/large_padding_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/lbl_boarding"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_jointing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_jointing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_jointing"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_screed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_screed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_screed"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_plastering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_plastering"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_plastering"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/color_gray_80"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_day_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_day_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_day_work"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_price_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_price_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_price_work"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/large_padding_margin"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_filled"
+                    android:padding="@dimen/big_btn_padding"
+                    android:stateListAnimator="@null"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/btn_filled_txt_color"
+                    android:textSize="@dimen/big_btn_txt_size" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/adminBar"
+        layout="@layout/content_admin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:visibility="gone" />
+
+</RelativeLayout>

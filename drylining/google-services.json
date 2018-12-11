@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477377497777",
+    "firebase_url": "https://drylining-test.firebaseio.com",
+    "project_id": "drylining-test",
+    "storage_bucket": "drylining-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477377497777:android:15b3fc2997b49876",
+        "android_client_info": {
+          "package_name": "com.app.drylining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477377497777-mnb2ukhdls8cvpihdod4aqo1vhnh6r42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjZSBD1CpJx2x9GluN4ELlSkcKjBYAPWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

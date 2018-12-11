@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_added_offers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    tools:context=".ui.AddNewOfferActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/cell_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/app_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:id="@+id/top_bar"
+            android:background="@drawable/app_board">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".30"
+                android:background="@drawable/app_board"
+                android:text="@string/btn_back"
+                android:textColor="@color/detail_sub_text_color"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="0dp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:layout_marginLeft="@dimen/large_padding_margin"
+                android:elevation="0dp"
+                android:layout_weight=".6"
+                app:tabBackground="@drawable/bg_tab"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabIndicatorHeight="@dimen/tab_indicator_height"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextAppearance="@style/CustomTextStyle"
+                app:tabTextColor="@color/gray" />
+        </LinearLayout>
+
+        <com.app.drylining.custom.CustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:background="@color/transparent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/adminBar"
+        layout="@layout/content_admin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:visibility="gone" />
+
+</RelativeLayout>

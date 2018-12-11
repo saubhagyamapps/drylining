@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/app_bg"
+    android:elevation="@dimen/toolbar_elevation">
+
+
+    <com.app.drylining.custom.CustomButton
+        android:id="@+id/btnToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textAllCaps="true"
+        android:layout_margin="@dimen/very_small_padding_margin"
+        android:background="@color/transparent"
+        android:textColor="@drawable/btn_toolbar_txt_color"
+        android:text="@string/btn_submit"
+        android:visibility="visible"
+        custom:customFont="@string/sans_pro_regular"/>
+
+</android.support.v7.widget.Toolbar>

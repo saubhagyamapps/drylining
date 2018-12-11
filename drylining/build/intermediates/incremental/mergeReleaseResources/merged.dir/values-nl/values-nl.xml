@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navigeren naar startpositie"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Omhoog navigeren"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Meer opties"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Gereed"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alles weergeven"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Een app selecteren"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"UIT"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"AAN"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Zoeken…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Zoekopdracht wissen"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Zoekopdracht"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Zoeken"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Zoekopdracht verzenden"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Delen met"</string>
+    <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Delen met <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Samenvouwen"</string>
+    <string name="alert_body_application_update_available">Nieuwe versie van de applicatie beschikbaar. Voer een update uit voor een betere ervaring.</string>
+    <string name="alert_body_delete_file">Weet je zeker dat je dit bestand wilt verwijderen?</string>
+    <string name="alert_body_downloading">Downloaden File ...</string>
+    <string name="alert_body_existing_email">Email bestaat al.</string>
+    <string name="alert_body_existing_pan">PAN bestaat al.</string>
+    <string name="alert_body_existing_phone">Mobiel nummer bestaat al</string>
+    <string name="alert_body_existing_username">Gebruikersnaam bestaat al.</string>
+    <string name="alert_body_invalid_credentials">U hebt verkeerde gegevens ingevoerd. Probeer het opnieuw</string>
+    <string name="alert_body_logout_confirmation">Weet je zeker dat je moet inloggen op LogOut?</string>
+    <string name="alert_body_network_error">Controleer uw netwerkverbinding.</string>
+    <string name="alert_body_no_app_for_viewing_file">U heeft misschien niet de juiste app om het% s-bestand te bekijken</string>
+    <string name="alert_body_no_net_description">Schakel uw internetverbinding in om de app uit te voeren.</string>
+    <string name="alert_body_no_net_title">Geen connectie</string>
+    <string name="alert_body_permission_not_granted">U hebt niet alle toestemming verleend die vereist is voor deze toepassing.</string>
+    <string name="alert_body_pwd_changed">Wachtwoord succesvol veranderd.</string>
+    <string name="alert_body_server_error">Serverfout.Probeer het na verloop van tijd opnieuw.</string>
+    <string name="alert_body_upload_file_size">U kunt maximaal 5mb-bestanden uploaden</string>
+    <string name="alert_body_upload_invalid_file">Upload een geldig bestand</string>
+    <string name="alert_body_uploading">Uploaden File...</string>
+    <string name="alert_body_verify_pending">Uw account is niet geverifieerd. Controleer dit voor LogIn.</string>
+    <string name="alert_body_wait">Bezig met laden…</string>
+    <string name="alert_body_wrong_current_pwd">Controleer de inloggegevens.</string>
+    <string name="alert_title_confirm">Bevestiging</string>
+    <string name="alert_title_error">Fout</string>
+    <string name="alert_title_loading">Even geduld aub</string>
+    <string name="alert_title_message">Bericht</string>
+    <string name="alert_title_none_net">"Connectie gefaald "</string>
+    <string name="alert_title_pwd_changed">Uw wachtwoord is met succes gewijzigd.</string>
+    <string name="alert_title_select">Selecteer</string>
+    <string name="alert_title_select_state">Selecteer staat</string>
+    <string name="alert_title_success">Succes</string>
+    <string name="alert_title_upload_image">Selecteer afbeelding</string>
+    <string name="alert_title_warning">Waarschuwing</string>
+    <string name="another_closest">Nog een vergelijkbare, vergelijkbare eigenschappen</string>
+    <string name="btn_accept">Aanvaarden</string>
+    <string name="btn_add">Toevoegen</string>
+    <string name="btn_add_bank_account">Bankrekening toevoegen</string>
+    <string name="btn_add_code">VOEG REFERRALE CODE TOE</string>
+    <string name="btn_add_document">Documenten toevoegen</string>
+    <string name="btn_album">Album</string>
+    <string name="btn_apply">Van toepassing zijn</string>
+    <string name="btn_back">Terug</string>
+    <string name="btn_cancel">Annuleer</string>
+    <string name="btn_change_pwd">Verander wachtwoord</string>
+    <string name="btn_clear">Duidelijk</string>
+    <string name="btn_close">Dichtbij</string>
+    <string name="btn_confirm">Bevestigen</string>
+    <string name="btn_delete">Verwijder</string>
+    <string name="btn_edit">Bewerk</string>
+    <string name="btn_finish">Af hebben</string>
+    <string name="btn_home">Ga naar huis</string>
+    <string name="btn_invite_friend">NODIG VRIENDEN UIT</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_logout">Uitloggen</string>
+    <string name="btn_my_points">MIJN PUNTEN</string>
+    <string name="btn_new_search">Nieuwe zoekopdracht</string>
+    <string name="btn_no">Nee</string>
+    <string name="btn_no_thanks">Nee, dank u wel</string>
+    <string name="btn_pay">Betalen</string>
+    <string name="btn_recalculate">Bereken belasting</string>
+    <string name="btn_refresh">Verversen</string>
+    <string name="btn_reg">Aanmelden</string>
+    <string name="btn_remove">Verwijderen</string>
+    <string name="btn_retry">Probeer het nog eens</string>
+    <string name="btn_review">Beoordeling</string>
+    <string name="btn_save">Opslaan</string>
+    <string name="btn_save_draft">Concept opslaan</string>
+    <string name="btn_search">Zoeken</string>
+    <string name="btn_signup">Registreren</string>
+    <string name="btn_submit">Voorleggen</string>
+    <string name="btn_transaction_success">Transactie geslaagd</string>
+    <string name="btn_update">Bijwerken</string>
+    <string name="btn_upload">Uploaden</string>
+    <string name="btn_verify">VERIFIËREN</string>
+    <string name="btn_yes">Ja</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Inschakelen"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> werkt niet, tenzij je Google Play-services inschakelt."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play-services inschakelen"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installeren"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play-services ophalen"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Beschikbaarheid van Google Play-services"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fout met Google Play-services"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> ondervindt problemen met Google Play-services. Probeer het opnieuw."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan niet worden uitgevoerd zonder Google Play-services, die niet worden ondersteund op je apparaat."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Updaten"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan niet worden uitgevoerd, tenzij je Google Play-services updatet."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play-services updaten"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Openen op telefoon"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Inloggen"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Inloggen met Google"</string>
+    <string name="default_notification_channel_name">Nieuws</string>
+    <string name="exo_controls_fastforward_description">"Vooruitspoelen"</string>
+    <string name="exo_controls_next_description">"Volgend nummer"</string>
+    <string name="exo_controls_pause_description">"Onderbreken"</string>
+    <string name="exo_controls_play_description">"Afspelen"</string>
+    <string name="exo_controls_previous_description">"Vorig nummer"</string>
+    <string name="exo_controls_repeat_all_description">"Alles herhalen"</string>
+    <string name="exo_controls_repeat_off_description">"Niet herhalen"</string>
+    <string name="exo_controls_repeat_one_description">"Eén herhalen"</string>
+    <string name="exo_controls_rewind_description">"Terugspoelen"</string>
+    <string name="exo_controls_stop_description">"Stoppen"</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Overige"</string>
+    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Overige"</string>
+    <string name="hint_city_town_name">Naam stad / gemeente</string>
+    <string name="hint_confirm_new_pwd">Bevestig nieuw wachtwoord</string>
+    <string name="hint_description">Beschrijving</string>
+    <string name="hint_father_name">Vader naam</string>
+    <string name="hint_fisrt_name">Voornaam</string>
+    <string name="hint_last_name">Achternaam</string>
+    <string name="hint_new_pwd">Voer een nieuw wachtwoord in</string>
+    <string name="hint_old_pwd">Voer het oude wachtwoord in</string>
+    <string name="hint_price">Prijs</string>
+    <string name="hint_street_name">Straatnaam</string>
+    <string name="lbl_agree_terms_and_conditions">Ik heb de algemene voorwaarden gelezen en ga ermee akkoord</string>
+    <string name="lbl_boarding">boarding</string>
+    <string name="lbl_change_pwd">Verander wachtwoord</string>
+    <string name="lbl_chats">Chats</string>
+    <string name="lbl_confirm_job_remove">Job verwijderen?</string>
+    <string name="lbl_confirm_tool_remove">Tool verwijderen?</string>
+    <string name="lbl_contact_person">CONTACTPERSOON :</string>
+    <string name="lbl_contact_person_review">Contactpersoon beoordeling</string>
+    <string name="lbl_contacts">Contacten</string>
+    <string name="lbl_day_work">Dag werk</string>
+    <string name="lbl_edit_profile">Bewerk profiel</string>
+    <string name="lbl_email_not_found">E-mail niet gevonden</string>
+    <string name="lbl_employer_review">Review werkgever</string>
+    <string name="lbl_favourites">Mijn favorieten</string>
+    <string name="lbl_forget_pwd">Wachtwoord vergeten</string>
+    <string name="lbl_it_return">Inkomstenbelastingaangifte</string>
+    <string name="lbl_job_marks">Marks</string>
+    <string name="lbl_job_name">Job Naam</string>
+    <string name="lbl_jointing">Verbindingstechniek</string>
+    <string name="lbl_language_settings">Taal instellingen</string>
+    <string name="lbl_lessee">Aannemer</string>
+    <string name="lbl_logout">Uitloggen</string>
+    <string name="lbl_mobile">Mobiele telefoon</string>
+    <string name="lbl_my_account">Mijn rekening</string>
+    <string name="lbl_name">Naam</string>
+    <string name="lbl_new_tool">Nieuwe tool</string>
+    <string name="lbl_no_records">Geen records</string>
+    <string name="lbl_notification_settings">Notificatie instellingen</string>
+    <string name="lbl_password">Wachtwoord</string>
+    <string name="lbl_payment_history">Bekijk geschiedenis</string>
+    <string name="lbl_people_who_are_interested">Mensen die geïnteresseerd zijn</string>
+    <string name="lbl_plastering">Stukadoors</string>
+    <string name="lbl_price_work">Prijs werk</string>
+    <string name="lbl_received_questions">Ontvangen vragen</string>
+    <string name="lbl_reg_email">Uw geregistreerde e-mail</string>
+    <string name="lbl_remember_me">Onthoud me</string>
+    <string name="lbl_renter">Cliënt</string>
+    <string name="lbl_retype_password">Geef nogmaals het wachtwoord</string>
+    <string name="lbl_screed">dekvloer</string>
+    <string name="lbl_select_file">Selecteer alstublieft</string>
+    <string name="lbl_start_return_filling">Start Terugvullen</string>
+    <string name="lbl_switch_account">Verwissel van profiel</string>
+    <string name="lbl_turn_on_of_all_notifications">Schakel alle meldingen van de app in of uit</string>
+    <string name="lbl_used_tool">Gebruikt gereedschap</string>
+    <string name="msg_email_mobile_password_error">Sorry, maar verzonden e-mail, telefoonnummer of wachtwoord zijn niet correct. Probeer het opnieuw.</string>
+    <string name="msg_email_password_error">Sorry, maar ingezonden e-mail of wachtwoord zijn niet correct. Probeer het opnieuw.</string>
+    <string name="msg_forgot_email_error">Sorry, maar ingezonden e-mail is niet geregistreerd in ons systeem. Probeer het nog eens.</string>
+    <string name="msg_forgot_pwd">Voer je geregistreerde e-mailadres in en we sturen je een link waar je het wachtwoord kunt herstellen</string>
+    <string name="msg_invalid_confirm_password">Bevestig wachtwoord</string>
+    <string name="msg_invalid_country">Land</string>
+    <string name="msg_invalid_dob">Geboortedatum</string>
+    <string name="msg_invalid_father_name">Vader naam</string>
+    <string name="msg_invalid_gender">Geslacht</string>
+    <string name="msg_invalid_last_name">Achternaam</string>
+    <string name="msg_invalid_name">Naam</string>
+    <string name="msg_invalid_new_password">Nieuw wachtwoord</string>
+    <string name="msg_invalid_old_password">Oud Wachtwoord</string>
+    <string name="msg_invalid_password">Wachtwoord</string>
+    <string name="msg_invalid_phone_number">Voer een geldig mobiel nummer in</string>
+    <string name="msg_invalid_state">Staat</string>
+    <string name="msg_invalid_user_name">UserName</string>
+    <string name="msg_otp_verify">Otp verzonden naar uw geregistreerde e-mailadres. Controleer uw e-mail voor 6-cijferige verificatiecode en voer hier in</string>
+    <string name="msg_password_match_error">Sorry, wachtwoorden die je hebt ingevoerd komen niet overeen. Probeer het nog eens.</string>
+    <string name="msg_signup_error">Corrigeer de onderstaande velden.</string>
+    <string name="none_added_offer">Geen recente taken die moeten worden weergegeven. Maak een nieuwe baan aan.</string>
+    <string name="none_added_tool">Geen recente tools om weer te geven. Maak een nieuwe tool aan.</string>
+    <string name="none_searched_offer">Geen recente taken die moeten worden weergegeven. Maak een nieuwe zoekopdracht aan.</string>
+    <string name="notify_to_renter">Wij zullen de huurder die u interesseert in zijn aanbod op de hoogte stellen en een afspraak maken.</string>
+    <string name="password_changed">Je hebt je wachtwoord met succes gewijzigd. U kunt nu inloggen.</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Zoeken"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="storage_permission_rationale">Opslagrechten zijn nodig voor het ophalen van afbeeldingen uit Galerij.</string>
+    <string name="tab_recently_added_jobs">Onlangs toegevoegde jobs</string>
+    <string name="tab_recently_added_tools">Onlangs toegevoegde tools</string>
+    <string name="tab_title_add_new_tool">Marktplaats</string>
+    <string name="tab_title_add_offer_by_address">Post Job</string>
+    <string name="tab_title_add_tool_by_address">Post Tool</string>
+    <string name="tab_title_login">Log in</string>
+    <string name="tab_title_modify_offer_by_address">wijzigen Job</string>
+    <string name="tab_title_modify_tool_by_address">wijzigen Tool</string>
+    <string name="tab_title_review_job">Review Job</string>
+    <string name="tab_title_seach_offer_by_address">Job Zoeken</string>
+    <string name="tab_title_seach_tool_by_address">Tool Zoeken</string>
+    <string name="tab_title_signup">Registreren</string>
+    <string name="title_activity_change_password">Nieuw wachtwoord</string>
+    <string name="title_activity_change_password_success">Wachtwoord veranderd</string>
+    <string name="title_activity_forgot_password">Wachtwoord vergeten</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="title_activity_notifications">Meldingen</string>
+    <string name="title_activity_search_results">Zoekresultaten</string>
+    <string name="title_activity_sign_up">Aanmelden</string>
+    <string name="txt_employer">Werkgever</string>
+    <string name="txt_job_seeker">Werkzoekende</string>
+    <string name="txt_my_jobs">Mijn Jobs</string>
+    <string name="txt_upload_images">Upload afbeeldingen</string>
+    <string name="txt_upload_images_and_condition">Upload afbeeldingen (u kunt er nog 8 toevoegen)</string>
+    <string name="txt_you_can_8_more">(u kunt er nog 8 toevoegen)</string>
+</resources>

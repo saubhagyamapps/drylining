@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_offer_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    tools:context=".ui.SearchedOfferDetailActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/cell_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-56dp"
+        android:layout_marginBottom="56dp">
+
+        <RelativeLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg_color">
+
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg_color"
+                android:padding="@dimen/large_padding_margin"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/topBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".30"
+                        android:background="@drawable/app_board"
+                        android:text="@string/btn_back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/detail_sub_text_color"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_new_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/medium_padding_margin"
+                        android:layout_weight=".60"
+                        android:background="@drawable/app_board"
+                        android:text="@string/btn_new_search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/detail_sub_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topBar"
+                    android:layout_marginTop="@dimen/small_padding_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top">
+
+                            <TextView
+                                android:id="@+id/offer_name"
+                                style="@style/MediumTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/img_loc_marker"
+                                android:gravity="left|center"
+                                android:text="Texasssssssssssssssssssssssssss"
+                                android:textSize="18sp" />
+
+
+                            <!--<ImageView
+                                android:id="@+id/img_loc_marker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="-4dp"
+                                android:layout_toLeftOf="@+id/txt_distance"
+                                android:scaleX="0.7"
+                                android:scaleY="0.7"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:id="@+id/txt_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="235.00 km"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />-->
+                            <Button
+                                android:id="@+id/btn_review_offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/primary_dark_color"
+                                android:gravity="center"
+                                android:text="@string/btn_review"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/very_small_padding_margin"
+                            android:paddingBottom="@dimen/very_small_padding_margin">
+
+                            <TextView
+                                android:id="@+id/txt_offer_type"
+                                style="@style/SmallTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="Boarding" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/very_small_padding_margin">
+
+                            <TextView
+                                android:id="@+id/txt_price"
+                                style="@style/MediumTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".70"
+                                android:gravity="center_vertical"
+                                android:text="500 EUR"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/txt_notification"
+                                style="@style/MediumTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".20"
+                                android:drawableLeft="@drawable/ic_person_dark"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:scaleX="0.7"
+                                android:scaleY="0.7"
+                                android:text="10"
+                                android:textSize="23sp" />
+
+                            <!--<CheckBox
+                                android:id="@+id/cb_favorite"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight=".10"
+                                android:button="@drawable/bg_favorite_checkbox" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--<android.support.v7.widget.AppCompatTextView
+                android:id="@+id/msg_sent_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topLayout"
+                android:layout_margin="@dimen/large_padding_margin"
+                android:background="@drawable/bg_success"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/large_padding_margin"
+                android:text="GREAT! INTEREST SENT"
+                android:textColor="@color/white"
+                android:textSize="20sp" />-->
+
+            <RelativeLayout
+                android:id="@+id/pageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topLayout"
+                android:layout_margin="@dimen/medium_padding_margin"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_image_pager"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:padding="@dimen/small_padding_margin"
+                    android:text="Meadows-a part of the prestigious sports city located at sector 150, Noida, has everything going for it—from brilliantly planned spaces, luxurious features, inspired roman architecture to world-class amenities and a golf course club. It is spread across 7 acres of verdant expanse and offers luxurious sky villas with personal pools, 2BHK+ study units , 3 and 4 BHK apartments varying in sizes from 1425 sq. ft. to 3400 sq. ft and 28 signature villas.\n\nA Large and luxurious State-of-the-art Clubhouse has been planned with Squash, Billiards, Gymnasium, Swimming Pool, Spa and a large banquet hall to fulfill your family’s entertainment needs. For the outdoors, a jogging trail, a cycling track, multipurpose courts, yoga pavilion and children’s play area have been specially provided."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_desc"
+                    android:layout_margin="@dimen/small_padding_margin"
+                    android:text="Location : Texas, Name street 26"
+                    android:textColor="@color/detail_address_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/txt_parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="Garage/Parking : Both"
+                    android:textColor="@color/detail_address_color"
+                    android:textSize="@dimen/small_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pageLayout">
+
+                <LinearLayout
+                    android:id="@+id/infoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large_padding_margin"
+                    android:layout_marginRight="@dimen/large_padding_margin"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/small_padding_margin"
+                    android:paddingRight="@dimen/small_padding_margin">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imagesChat"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_chat_darck"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:drawableLeft="@drawable/ic_phone_darck"
+                        android:gravity="center_vertical|left"
+                        android:text="8980192575"
+
+                        android:textSize="@dimen/small_text_size" />
+
+                    <!--android:textColor="@color/color_gray_99"-->
+
+                    <TextView
+                        android:id="@+id/txt_space"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ic_person_dark"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="15dp"
+                        android:text="John Doi"
+
+                        android:textSize="@dimen/small_text_size" />
+                    <!--android:textColor="@color/color_gray_99"-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infoLayout"
+                    android:layout_margin="@dimen/large_padding_margin"
+                    android:orientation="vertical">
+
+                    <!--<Button
+                        android:id="@+id/btn_send_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_padding_margin"
+                        android:background="@drawable/btn_filled"
+                        android:padding="@dimen/large_padding_margin"
+                        android:text="Send Question"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/btn_filled_txt_color"
+                        android:textSize="@dimen/big_btn_txt_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/small_padding_margin"
+                        android:gravity="center"
+                        android:text="Or"
+                        android:textSize="@dimen/mid_btn_txt_size" />-->
+
+                    <Button
+                        android:id="@+id/btn_interested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/large_padding_margin"
+                        android:layout_marginBottom="@dimen/medium_padding_margin"
+                        android:background="@drawable/board_read"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="@dimen/large_padding_margin"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="@dimen/large_padding_margin"
+                        android:text="I'm interested now"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/btn_filled_txt_color"
+                        android:textSize="@dimen/mid_btn_txt_size" />
+
+                    <!--<LinearLayout
+                        android:id="@+id/interestedLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/notify_to_renter"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/large_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/large_padding_margin"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/btn_notify_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="40"
+                                android:background="@drawable/btn_filled"
+                                android:padding="@dimen/large_padding_margin"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/btn_filled_txt_color"
+                                android:textSize="@dimen/big_btn_txt_size" />
+
+                            <Button
+                                android:id="@+id/btn_notify_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/very_large_padding_margin"
+                                android:layout_weight="30"
+                                android:background="@drawable/btn_filled_gray"
+                                android:padding="@dimen/large_padding_margin"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/btn_filled_txt_color"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/employer_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/large_padding_margin"
+                            android:text="@string/lbl_employer_review"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/large_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/employer_ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:scaleX="0.5"
+                                android:scaleY="0.5"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                            <TextView
+                                android:id="@+id/txt_employer_marks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/large_padding_margin"
+                                android:text="5.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/medium_text_size" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_employer_review_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_filled"
+                            android:ems="10"
+                            android:padding="@dimen/large_padding_margin"
+                            android:textSize="@dimen/edit_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_person_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/employer_review"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/large_padding_margin"
+                            android:text="@string/lbl_contact_person_review"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/large_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/contact_person_ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:scaleX="0.5"
+                                android:scaleY="0.5"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                            <TextView
+                                android:id="@+id/txt_contact_person_marks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/large_padding_margin"
+                                android:text="5.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/medium_text_size" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_contact_person_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_filled"
+                            android:ems="10"
+                            android:padding="@dimen/large_padding_margin"
+                            android:textSize="@dimen/edit_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middleLayout"
+                android:layout_margin="@dimen/medium_padding_margin">
+
+                <TextView
+                    android:id="@+id/lbl_similar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/another_closest"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/another_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lbl"
+                    android:layout_marginTop="@dimen/large_padding_margin" />
+
+            </RelativeLayout>-->
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/adminBar"
+        layout="@layout/content_admin_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:visibility="gone" />
+</RelativeLayout>
