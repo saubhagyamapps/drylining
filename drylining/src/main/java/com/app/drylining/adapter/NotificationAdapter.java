@@ -69,36 +69,40 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public void onBindViewHolder(NotificationAdapter.ViewHolder holder, int position) {
         Conversation con = arrayList.get(position);
         if (con != null) {
-            holder.mainLayout.setTag(con);
+           /* if (!appData.getUserId().equals(String.valueOf(con.getSenderId()))) {
+*/
+                holder.mainLayout.setTag(con);
 
-            holder.txtTimeAgo.setText(con.getTimeAgo());
+                holder.txtTimeAgo.setText(con.getTimeAgo());
 
-            holder.txtContent.setText(con.getContent());
-            if (con.getNewRead().equals("0")) {
-                holder.mainLayout.setBackgroundResource(R.color.light_gray);
-            } else {
-                holder.mainLayout.setBackgroundResource(R.color.app_bg_color);
-            }
-            String type = con.getMessageType();
-            if (type.equals("LtoR") || type.equals("RtoL")) {
-                holder.iconImg.setImageResource(R.drawable.ic_mail);
-
-                String state = con.getMessageState();
-                if (state.equals("unread")) {
-                    holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.primary_color));
-                } else if (state.equals("read")) {
-                    holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_gray_99));
+                holder.txtContent.setText(con.getContent());
+                if (con.getNewRead().equals("0")) {
+                    holder.mainLayout.setBackgroundResource(R.color.light_gray);
+                } else {
+                    holder.mainLayout.setBackgroundResource(R.color.app_bg_color);
                 }
-            } else if (type.equals("interest") || type.equals("confirm_interest")) {
-                //holder.iconImg.setImageResource(R.drawable.ic_thumb_white);
-                //holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_gray_4d));
-            } else if (type.equals("favorite")) {
-                holder.iconImg.setImageResource(R.drawable.ic_favourite_white);
-                holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_success));
-            } else if (type.equals("criteria")) {
-                holder.iconImg.setImageResource(R.drawable.ic_star_white);
-                holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_success));
-            }
+                String type = con.getMessageType();
+                if (type.equals("LtoR") || type.equals("RtoL")) {
+                    holder.iconImg.setImageResource(R.drawable.ic_mail);
+
+                    String state = con.getMessageState();
+                    if (state.equals("unread")) {
+                        holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.primary_color));
+                    } else if (state.equals("read")) {
+                        holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_gray_99));
+                    }
+                } else if (type.equals("interest") || type.equals("confirm_interest")) {
+                    //holder.iconImg.setImageResource(R.drawable.ic_thumb_white);
+                    //holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_gray_4d));
+                } else if (type.equals("favorite")) {
+                    holder.iconImg.setImageResource(R.drawable.ic_favourite_white);
+                    holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_success));
+                } else if (type.equals("criteria")) {
+                    holder.iconImg.setImageResource(R.drawable.ic_star_white);
+                    holder.mainLayout.setBackgroundColor(mContext.getResources().getColor(R.color.color_success));
+                }
+
+            //}
         }
     }
 

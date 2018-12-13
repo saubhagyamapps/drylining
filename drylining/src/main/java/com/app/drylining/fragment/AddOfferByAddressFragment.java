@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import com.app.drylining.R;
 import com.app.drylining.Util;
 import com.app.drylining.custom.AppDebugLog;
@@ -296,7 +297,8 @@ public class AddOfferByAddressFragment extends Fragment implements RequestTaskDe
             requestTask.delegate = AddOfferByAddressFragment.this;
             requestTask.execute(AppConstant.ADD_PROPERTY, postName + "&" + postPrice + "&" + postCurrencyType + "&" + postCountry + "&" + postCity + "&" + postStreet + "&" + postJobType + "&" + postWorkType + "&" +
                     postDesc + "&" + postAddType + "&" + postUserId + "&" + postContactName + "&" + postMobile);
-            //Log.e("request;", postName + "&" + postPrice + "&" + postCity + "&" + postStreet + "&" + postJobType + "&" + postWorkType + "&" + postDesc + "&" + postAddType);
+           /* Log.e("AddofferByAdd","fsdddd"+String.valueOf(AppConstant.ADD_PROPERTY, postName + "&" + postPrice + "&" + postCurrencyType + "&" + postCountry + "&" + postCity + "&" + postStreet + "&" + postJobType + "&" + postWorkType + "&" +
+                    postDesc + "&" + postAddType + "&" + postUserId + "&" + postContactName + "&" + postMobile));*/
         } else {
             Util.showNoConnectionDialog(getActivity());
         }

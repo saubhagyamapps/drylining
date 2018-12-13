@@ -1,6 +1,7 @@
 package com.app.drylining.retrofit;
 
 
+import com.app.drylining.model.LogoutModel;
 import com.app.drylining.model.MSGCountModel;
 import com.app.drylining.model.NotificationReadModel;
 import com.app.drylining.model.OTPModel;
@@ -28,5 +29,9 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST("all_notification_count.php")
     Call<MSGCountModel> getCountBit(@Field("click") String click,@Field("userId") String userId);
+
+    @FormUrlEncoded
+    @POST("logout.php")
+    Call<LogoutModel> logout(@Field("user_id") String userId);
 
 }

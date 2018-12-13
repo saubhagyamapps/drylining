@@ -55,7 +55,7 @@ dependencies {
     implementation 'jp.wasabeef:recyclerview-animators:2.2.6'
     implementation 'com.crystal:crystalrangeseekbar:1.1.1'
 
-    implementation 'com.google.firebase:firebase-messaging:15.0.2'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
 
     implementation "com.quickblox:quickblox-android-sdk-chat:3.8.1"
     implementation "com.quickblox:quickblox-android-sdk-content:3.8.1"

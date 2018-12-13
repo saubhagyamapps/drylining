@@ -115,14 +115,18 @@ public class DashboardActivity extends CustomMainActivity implements TabLayout.O
     }
 
     private void countApiCall() {
+
         ApiInterface apiService =
                 ApiClient.getClient().create(ApiInterface.class);
         Call<MSGCountModel> countModelCall = apiService.getCountBit("1", appData.getUserId());
         countModelCall.enqueue(new Callback<MSGCountModel>() {
             @Override
             public void onResponse(Call<MSGCountModel> call, Response<MSGCountModel> response) {
-                mMsgCount = response.body().getCount();
-                toolbar_txt_messages_new.setText(response.body().getCount());
+                if(!response.body().getCount().equals("0")){
+                    mMsgCount = response.body().getCount();
+                    toolbar_txt_messages_new.setText(response.body().getCount());
+                }
+
             }
 
             @Override

@@ -26,13 +26,22 @@ import com.app.drylining.custom.CustomMainActivity;
 import com.app.drylining.data.AppConstant;
 import com.app.drylining.data.ApplicationData;
 import com.app.drylining.data.Conversation;
+import com.app.drylining.model.MSGCountModel;
 import com.app.drylining.network.RequestTask;
 import com.app.drylining.network.RequestTaskDelegate;
+import com.app.drylining.retrofit.ApiClient;
+import com.app.drylining.retrofit.ApiInterface;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import static com.app.drylining.ui.DashboardActivity.toolbar_txt_messages_new;
 
 /**
  * Created by Panda on 6/15/2017.
@@ -88,6 +97,29 @@ public class ActivityNotifications extends CustomMainActivity implements Request
         initialize();
     }
 
+    private void countApiCall() {
+        appData = ApplicationData.getSharedInstance();
+        ApiInterface apiService =
+                ApiClient.getClient().create(ApiInterface.class);
+        Call<MSGCountModel> countModelCall = apiService.getCountBit("0", appData.getUserId());
+        countModelCall.enqueue(new Callback<MSGCountModel>() {
+            @Override
+            public void onResponse(Call<MSGCountModel> call, Response<MSGCountModel> response) {
+                try {
+                    toolbar_txt_messages_new.setText("");
+                }catch (Exception e){
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<MSGCountModel> call, Throwable t) {
+
+            }
+        });
+
+    }
+
     private void initialize() {
         appData = ApplicationData.getSharedInstance();
 
@@ -95,7 +127,7 @@ public class ActivityNotifications extends CustomMainActivity implements Request
 
         animShow = AnimationUtils.loadAnimation(this, R.anim.view_show);
         animHide = AnimationUtils.loadAnimation(this, R.anim.view_hide);
-
+        countApiCall();
         conList = new ArrayList<Conversation>();
 
         sendGetNotificationsRequest();
@@ -204,10 +236,12 @@ public class ActivityNotifications extends CustomMainActivity implements Request
             adapter = new NotificationAdapter(this, conList);
             RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
             recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setHasFixedSize(true);
+            adapter.notifyDataSetChanged();
             recyclerView.setAdapter(adapter);
         }
 
-        adapter.notifyDataSetChanged();
+
     }
 
     @Override
@@ -235,7 +269,6 @@ public class ActivityNotifications extends CustomMainActivity implements Request
                     int receiver = con.getInt("receiver_id");
 
                     int offer = con.getInt("offer_id");
-
                     String content = con.getString("content");
 
                     String message_type = con.getString("message_type");

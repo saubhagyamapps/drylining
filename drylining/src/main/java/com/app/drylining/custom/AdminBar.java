@@ -124,7 +124,7 @@ public class AdminBar implements View.OnClickListener {
         countModelCall.enqueue(new Callback<MSGCountModel>() {
             @Override
             public void onResponse(Call<MSGCountModel> call, Response<MSGCountModel> response) {
-                toolbar_txt_messages_new.setText(response.body().getCount());
+                toolbar_txt_messages_new.setText("");
             }
 
             @Override

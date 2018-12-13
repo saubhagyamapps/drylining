@@ -1439,7 +1439,7 @@
     <string name="country_united_states" translatable="false">United States</string>
     <string name="country_wales" translatable="false">Wales(Under UK)</string>
     <string name="create_chat">Creating chat…</string>
-    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_id" translatable="false">id_product</string>
     <string name="default_notification_channel_name" translatable="true">News</string>
     <string name="default_web_client_id" translatable="false">477377497777-mnb2ukhdls8cvpihdod4aqo1vhnh6r42.apps.googleusercontent.com</string>
     <string name="dialogs_creation_error">Dialog creation errors</string>

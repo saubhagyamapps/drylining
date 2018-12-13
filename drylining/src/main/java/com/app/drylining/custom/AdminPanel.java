@@ -20,16 +20,21 @@ import com.app.drylining.Util;
 import com.app.drylining.chat.ui.activity.DialogsActivity;
 import com.app.drylining.chat.ui.activity.SelectUsersActivity;
 import com.app.drylining.data.ApplicationData;
-import com.app.drylining.ui.ActivityFavoriteOffers;
+import com.app.drylining.model.LogoutModel;
+import com.app.drylining.retrofit.ApiClient;
+import com.app.drylining.retrofit.ApiInterface;
 import com.app.drylining.ui.ActivityMyAccount;
 import com.app.drylining.ui.ActivityNotifySettings;
-import com.app.drylining.ui.AddedOffersActivity;
 import com.app.drylining.ui.DashboardActivity;
 import com.app.drylining.ui.MainActivity;
 import com.app.drylining.ui.SearchActivity;
 import com.app.drylining.utils.AppInfo;
 
 import java.util.Locale;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AdminPanel implements View.OnClickListener
 {
@@ -217,6 +222,7 @@ public class AdminPanel implements View.OnClickListener
                 }
                 break;
             case R.id.admin_txt_logout:
+                apicallLogout();
                 appData.setIsLoggedIn("N");
                 Intent loginIntent=new Intent(mActivity, MainActivity.class);
                 loginIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -261,6 +267,23 @@ public class AdminPanel implements View.OnClickListener
                 mActivity.finish();
                 break;
         }
+    }
+
+    private void apicallLogout() {
+        ApiInterface apiService =
+                ApiClient.getClient().create(ApiInterface.class);
+        Call<LogoutModel> logoutModelCall=apiService.logout(appData.getUserId());
+        logoutModelCall.enqueue(new Callback<LogoutModel>() {
+            @Override
+            public void onResponse(Call<LogoutModel> call, Response<LogoutModel> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<LogoutModel> call, Throwable t) {
+
+            }
+        });
     }
 
     private void goToFirstActivity(boolean isRenter)

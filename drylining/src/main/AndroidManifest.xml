@@ -147,6 +147,9 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/app_bg_color" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
         <!-- FCM END -->
 
         <provider
@@ -183,14 +186,14 @@
 
         <activity
             android:name=".chat.ui.activity.SelectUsersActivity"
-            android:theme="@style/ChatActivityTheme"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden"/>
+            android:theme="@style/ChatActivityTheme"
+            android:windowSoftInputMode="stateHidden" />
 
         <activity
             android:name=".chat.ui.activity.DialogsActivity"
-            android:theme="@style/ChatActivityTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme" />
 
         <activity
             android:name=".chat.ui.activity.ChatActivity"
@@ -201,10 +204,11 @@
         <activity
             android:name=".chat.ui.activity.ChatInfoActivity"
             android:label="@string/chat_info"
-            android:theme="@style/ChatActivityTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme" />
 
-        <activity android:name=".chat.ui.activity.AttachmentImageActivity"
+        <activity
+            android:name=".chat.ui.activity.AttachmentImageActivity"
             android:screenOrientation="portrait" />
     </application>
 
