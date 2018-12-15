@@ -50,7 +50,7 @@ import java.util.ArrayList;
 @SuppressLint("ValidFragment")
 public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate {
     private static final String TAG = "AddNewOfferFragment";
-    int Flag = 0;
+    int Flag = 1;
 
     Button txtMyJob, txtRecentrlyAddJob, btn_new_search;
     private ApplicationData appData;
@@ -150,6 +150,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                 btnAddNewOffer.setText("Post Job");
                 sendSearchRequest();
                 offerList.clear();
+                Flag = 0;
             }
         });
     }
@@ -246,7 +247,16 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
         } catch (Exception e) {
             sendGetProperties();
         }*/
-        sendGetProperties();
+        if (Flag == 0)
+        {
+            sendSearchRequest();
+        }
+        else
+        {
+            sendGetProperties();
+
+        }
+        //sendGetProperties();
     }
 
     private void sendGetProperties() {
