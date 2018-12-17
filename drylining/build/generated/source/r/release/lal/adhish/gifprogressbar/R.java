@@ -522,18 +522,18 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f08005a;
         public static final int abc_textfield_search_material = 0x7f08005b;
         public static final int abc_vector_test = 0x7f08005c;
-        public static final int notification_action_background = 0x7f08010e;
-        public static final int notification_bg = 0x7f08010f;
-        public static final int notification_bg_low = 0x7f080110;
-        public static final int notification_bg_low_normal = 0x7f080111;
-        public static final int notification_bg_low_pressed = 0x7f080112;
-        public static final int notification_bg_normal = 0x7f080113;
-        public static final int notification_bg_normal_pressed = 0x7f080114;
-        public static final int notification_icon_background = 0x7f080115;
-        public static final int notification_template_icon_bg = 0x7f080116;
-        public static final int notification_template_icon_low_bg = 0x7f080117;
-        public static final int notification_tile_bg = 0x7f080118;
-        public static final int notify_panel_notification_icon_bg = 0x7f080119;
+        public static final int notification_action_background = 0x7f080110;
+        public static final int notification_bg = 0x7f080111;
+        public static final int notification_bg_low = 0x7f080112;
+        public static final int notification_bg_low_normal = 0x7f080113;
+        public static final int notification_bg_low_pressed = 0x7f080114;
+        public static final int notification_bg_normal = 0x7f080115;
+        public static final int notification_bg_normal_pressed = 0x7f080116;
+        public static final int notification_icon_background = 0x7f080117;
+        public static final int notification_template_icon_bg = 0x7f080118;
+        public static final int notification_template_icon_low_bg = 0x7f080119;
+        public static final int notification_tile_bg = 0x7f08011a;
+        public static final int notify_panel_notification_icon_bg = 0x7f08011b;
     }
     public static final class id {
         public static final int action0 = 0x7f09000c;

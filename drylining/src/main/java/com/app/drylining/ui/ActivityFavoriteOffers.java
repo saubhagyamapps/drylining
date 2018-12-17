@@ -208,7 +208,7 @@ public class ActivityFavoriteOffers extends CustomMainActivity implements Reques
                 String image_path = property.getString("image_path");
                 double distance=property.optDouble("distance");
 
-                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path);
+                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path,"","");
                 offer.setDistance(distance);
                 offer.setConversations(msgNumArray.getInt(i));
 

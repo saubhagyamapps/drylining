@@ -17,10 +17,10 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolBar"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolBar">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/top_margin"
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -89,32 +89,33 @@
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/setting_cb_boarding"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:button="@drawable/bg_setting_checkbox" />
-
-                <TextView
-                    android:id="@+id/setting_txt_boarding"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/large_padding_margin"
-                    android:gravity="center_vertical"
-                    android:text="@string/lbl_boarding"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/setting_cb_boarding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:button="@drawable/bg_setting_checkbox" />
+
+                    <TextView
+                        android:id="@+id/setting_txt_boarding"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/large_padding_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_boarding"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
+
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -137,7 +138,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
+
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -160,7 +162,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
+
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -183,7 +186,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
+
                     android:background="@color/color_gray_80"
                     android:orientation="horizontal">
 
@@ -192,7 +196,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
+
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -215,7 +220,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/top_margin"
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -240,8 +245,8 @@
                     android:id="@+id/btn_save"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/large_padding_margin"
-                    android:layout_marginTop="30dp"
                     android:background="@drawable/btn_filled"
                     android:padding="@dimen/big_btn_padding"
                     android:stateListAnimator="@null"

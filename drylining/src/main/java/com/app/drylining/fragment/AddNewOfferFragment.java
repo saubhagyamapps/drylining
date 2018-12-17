@@ -146,7 +146,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                 recyclerView.setVisibility(View.VISIBLE);
 
                 txtRecentrlyAddJob.setBackgroundColor(getResources().getColor(R.color.white));
-                txtMyJob.setBackgroundResource(R.drawable.app_board);
+                txtMyJob.setBackgroundResource(R.drawable.app_board_with_padding);
                 btnAddNewOffer.setText("Post Job");
                 sendSearchRequest();
                 offerList.clear();
@@ -165,7 +165,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                 recyclerView_new.setVisibility(View.VISIBLE);
                 btnAddNewOffer.setText("New Search");
                 txtMyJob.setBackgroundColor(getResources().getColor(R.color.white));
-                txtRecentrlyAddJob.setBackgroundResource(R.drawable.app_board);
+                txtRecentrlyAddJob.setBackgroundResource(R.drawable.app_board_with_padding);
                 sendGetProperties();
                 Flag = 1;
 
@@ -367,7 +367,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                     }
                     Integer conversations = property.getInt("conversation_count");
 
-                    Offer offer = new Offer(id, name, longitude, latitude, price, work_type, "");
+                    Offer offer = new Offer(id, name, longitude, latitude, price, work_type, "","","");
                     offer.setConversations(conversations);
                     offer.setJobStatus(job_status);
                     offer.setInterested(job_statusCon);

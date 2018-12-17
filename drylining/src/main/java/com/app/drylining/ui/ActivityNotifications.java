@@ -84,6 +84,16 @@ public class ActivityNotifications extends CustomMainActivity implements Request
             }
         });*/
     }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        try {
+            onCreate(savedInstanceState);
+        }catch (Exception e){
+
+        }
+
+    }
 
     @Override
     protected void onResume() {

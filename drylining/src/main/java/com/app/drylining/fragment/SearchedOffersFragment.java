@@ -281,7 +281,7 @@ public class SearchedOffersFragment extends Fragment implements RequestTaskDeleg
 
                     double distance = property.optDouble("distance");
 
-                    Offer offer = new Offer(id, name, longitude, latitude, price, job_type, image_path);
+                    Offer offer = new Offer(id, name, longitude, latitude, price, job_type, image_path,"","");
                     offer.setDistance(distance);
                     offer.setCurrency(currency_type);
                     offer.setInterested(job_statuse);

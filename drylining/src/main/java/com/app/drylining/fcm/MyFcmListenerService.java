@@ -53,7 +53,7 @@ public class MyFcmListenerService extends FirebaseMessagingService {
     private String KEY_MESSAGE = "message";
     private String KEY_RECORD_ID = "recordID";
     private String KEY_RECORD_TYPE = "type";
-    private NotificationUtils notificationUtils;
+
     private ApplicationData appData;
     private int type = 1;
 

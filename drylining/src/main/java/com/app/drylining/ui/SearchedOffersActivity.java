@@ -333,7 +333,7 @@ public class SearchedOffersActivity extends CustomMainActivity implements Reques
 
                     double distance = property.optDouble("distance");
 
-                    Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path);
+                    Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path,"","");
                     offer.setDistance(distance);
 
                     offer.setConversations(msgNumArray.getInt(i));

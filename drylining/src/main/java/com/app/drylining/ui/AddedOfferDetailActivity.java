@@ -15,6 +15,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -49,6 +50,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class AddedOfferDetailActivity extends CustomMainActivity implements RequestTaskDelegate, FavoriteListener {
+    private static final String TAG = "AddedOfferDetailActivit";
     public RatingBar employer_ratingBar, contact_person_ratingBar;
     private Toolbar toolbar;
     private ApplicationData appData;
@@ -70,6 +72,7 @@ public class AddedOfferDetailActivity extends CustomMainActivity implements Requ
     private View actNext, actPrev;
     private JSONObject propObj;
     private int selectedOfferId;
+    private String mBackActivityName;
     private Offer selectedOffer;
     private int unreadMsgClientId, readMsgClientId;
     private AdminBar adminbar;
@@ -220,6 +223,8 @@ public class AddedOfferDetailActivity extends CustomMainActivity implements Requ
 
         showProgressDialog();
         selectedOfferId = getIntent().getIntExtra("OfferID", 1);
+        mBackActivityName = getIntent().getStringExtra("BackActivityName");
+        Log.e(TAG, "initialize:----> " + mBackActivityName);
         RequestTask requestTask = new RequestTask(AppConstant.GET_PROPERTY_INFO_RENTER, AppConstant.HttpRequestType.getPropertyInfo);
         requestTask.delegate = AddedOfferDetailActivity.this;
         String userId = appData.getUserId();
@@ -305,8 +310,14 @@ public class AddedOfferDetailActivity extends CustomMainActivity implements Requ
             closeAdminPanel();
         else {
             super.onBackPressed();
-            startActivity(new Intent(this, DashboardActivity.class));
-            finish();
+            if (mBackActivityName.equals("Notifation")) {
+                finish();
+            } else if (mBackActivityName.equals("SearchAcivity")) {
+                finish();
+            } else {
+                startActivity(new Intent(this, DashboardActivity.class));
+                finish();
+            }
         }
     }
 
@@ -410,7 +421,7 @@ public class AddedOfferDetailActivity extends CustomMainActivity implements Requ
 
                 int cntInterest = properties_response.getInt("countInterest");
                 txtInterests.setText("People who are interested " + "(" + cntInterest + ")");
-                if(appData.getUserId().equals(employerId)){
+                if (appData.getUserId().equals(employerId)) {
                     if (cntInterest > 0 && job_status == 0) {
                         JSONArray favoriteArray = properties_response.getJSONArray("interests");
                         for (int i = 0; i < favoriteArray.length(); i++) {

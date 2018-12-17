@@ -28,8 +28,9 @@ public interface ApiInterface {
     //http://dryliningapp.com/admin/api/all_notification_count.php?click=1
     @FormUrlEncoded
     @POST("all_notification_count.php")
-    Call<MSGCountModel> getCountBit(@Field("click") String click,@Field("userId") String userId);
+    Call<MSGCountModel> getCountBit(@Field("click") String click, @Field("userId") String userId);
 
+    //http://dryliningapp.com/admin/api/logout.php?user_id=156
     @FormUrlEncoded
     @POST("logout.php")
     Call<LogoutModel> logout(@Field("user_id") String userId);

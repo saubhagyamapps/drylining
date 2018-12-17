@@ -11,10 +11,9 @@
 
         <LinearLayout
             android:id="@+id/topBar"
+            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_marginTop="5dp"
-            android:background="@color/app_bg_color"
             android:orientation="horizontal">
 
             <!-- <TextView
@@ -35,9 +34,8 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/msg_success"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="2dp"
                 android:layout_weight=".60"
-                android:background="@drawable/app_board"
+                android:background="@drawable/app_board_with_padding"
                 android:text="@string/tab_recently_added_jobs"
                 android:textAllCaps="false"
                 android:textColor="@color/color_gray_66"
@@ -55,12 +53,12 @@
                  android:textColor="#000000"
                  android:textSize="18sp" />-->
             <Button
+                android:padding="0dp"
                 android:id="@+id/txtMyJob"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/msg_success"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="2dp"
                 android:layout_weight=".60"
                 android:background="@color/white"
                 android:text="@string/txt_my_jobs"

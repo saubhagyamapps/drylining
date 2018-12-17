@@ -238,6 +238,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         if (appData.getUserId().equals(String.valueOf(selectedClientId))) {
             Intent detailIntent = new Intent(mContext, AddedOfferDetailActivity.class);
             detailIntent.putExtra("OfferID", selectedOfferId);
+            detailIntent.putExtra("BackActivityName", "Notifation");
+
             mContext.startActivity(detailIntent);
         } else {
             if (messageType.equals("LtoR")) {
@@ -255,11 +257,13 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             } else if (messageType.equals("interest") || messageType.equals("favorite")) {
                 Intent detailIntent = new Intent(mContext, SearchedOfferDetailActivity.class);
                 detailIntent.putExtra("OfferID", selectedOfferId);
+                detailIntent.putExtra("BackActivityName", "Notifation");
                 mContext.startActivity(detailIntent);
                 //mContext.finish();
             } else if (messageType.equals("confirm_interest") || messageType.equals("criteria")) {
                 Intent intent = new Intent(mContext, AddedOfferDetailActivity.class);
                 intent.putExtra("OfferID", selectedOfferId);
+                intent.putExtra("BackActivityName", "Notifation");
                 mContext.startActivity(intent);
                 //mContext.finish();
             }

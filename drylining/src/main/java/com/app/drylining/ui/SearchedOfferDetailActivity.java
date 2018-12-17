@@ -50,8 +50,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class SearchedOfferDetailActivity extends CustomMainActivity implements RequestTaskDelegate
-{
+public class SearchedOfferDetailActivity extends CustomMainActivity implements RequestTaskDelegate {
+    private static final String TAG = "SearchedOfferDetailActi";
+    public RatingBar employer_ratingBar, contact_person_ratingBar;
+    ImageView imageViewChat;
     private Toolbar toolbar;
     private ApplicationData appData;
     private ProgressDialog pdialog;
@@ -60,46 +62,38 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
     private SearchedOffersAdapter adapter;
     private ViewPagerAdapter viewPagerAdapter;
     private TextView txtOfferName, txtDistance, txtPrice, txtFavorites, txtDescription,
-            txtParking, txtLocation, txtPhone, txtName,txtRoomType, txtInterestSent, txtSimilarOffers;
+            txtParking, txtLocation, txtPhone, txtName, txtRoomType, txtInterestSent, txtSimilarOffers;
     private CheckBox cbFavourite;
     private LinearLayout interestedLayout;
     private Button btnBack, btnNewSearch, btnConversation, btnInterested, btnReviewOffer;
     private String[] images;
-
     private ScrollView mainScrollView;
     private RelativeLayout mainContainer;
-
     private double distance;
     private int cnt_conversations;
-    private View actNext,actPrev;
-
+    private View actNext, actPrev;
     private JSONObject propObj;
     private int selectedOfferId;
     private Offer selectedOffer;
     private int offerId;
+    private String mBackActivityName;
     private String userId;
     private boolean isInterested, isFavorited;
-
     private ArrayList<Offer> similarOfferList;
-
     private AdminBar adminbar;
     private AdminPanel adminPanel;
     private LinearLayout adminLayout;
-
     private Animation animShow, animHide;
-
     private LinearLayout employerReviewLayout, contactPersonReviewLayout;
-    public RatingBar employer_ratingBar, contact_person_ratingBar;
     private TextView txtEmployerMarks, txtContactPersonMarks, txtEmployerDescription, txtContactPersonDescription;
-    ImageView imageViewChat;
+
     @Override
-    protected void onCreate(final Bundle savedInstanceState)
-    {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searched_offer_detail);
         toolbar = (Toolbar) findViewById(R.id.toolBar);
-        adminLayout= (LinearLayout) findViewById(R.id.adminBar);
-        imageViewChat=findViewById(R.id.imagesChat);
+        adminLayout = (LinearLayout) findViewById(R.id.adminBar);
+        imageViewChat = findViewById(R.id.imagesChat);
         mainScrollView = (ScrollView) findViewById(R.id.main_scrollview);
         SharedPreferences pref = getApplicationContext().getSharedPreferences("BackStack", 0); // 0 - for private mode
         SharedPreferences.Editor editor = pref.edit();
@@ -159,20 +153,16 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
             }
         });
 
-        btnBack.setOnClickListener(new View.OnClickListener()
-        {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 SearchedOfferDetailActivity.this.onBackPressed();
             }
         });
 
-        btnNewSearch.setOnClickListener(new View.OnClickListener()
-        {
+        btnNewSearch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 startActivity(new Intent(SearchedOfferDetailActivity.this, SearchNewOfferActivity.class));
                 SearchedOfferDetailActivity.this.finish();
             }
@@ -206,7 +196,7 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         txtPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialContactPhone((String)txtPhone.getText());
+                dialContactPhone((String) txtPhone.getText());
             }
         });
     }
@@ -228,8 +218,7 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
     }
 
     @Override
-    protected void onResume()
-    {
+    protected void onResume() {
         super.onResume();
 
         initialize();
@@ -244,15 +233,20 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
     }
 
     @Override
-    public void onBackPressed()
-    {
-        if(adminLayout.getVisibility() == View.VISIBLE)
+    public void onBackPressed() {
+        if (adminLayout.getVisibility() == View.VISIBLE)
             closeAdminPanel();
         else {
             super.onBackPressed();
-            startActivity(new Intent(this, DashboardActivity.class));
+            if (mBackActivityName.equals("Notifation")) {
+                finish();
+            } else if (mBackActivityName.equals("SearchAcivity")) {
+                finish();
+            } else {
+                startActivity(new Intent(this, DashboardActivity.class));
+                finish();
+            }
 
-            finish();
         }
     }
 
@@ -269,23 +263,24 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         finish();
     }*/
 
-    private void initialize()
-    {
+    private void initialize() {
         //txtInterestSent.setVisibility(View.GONE);
         //interestedLayout.setVisibility(View.GONE);
         isInterested = false;
-        isFavorited  = false;
+        isFavorited = false;
 
         appData = ApplicationData.getSharedInstance();
 
         setToolbar();
 
-        animShow = AnimationUtils.loadAnimation( this, R.anim.view_show);
-        animHide = AnimationUtils.loadAnimation( this, R.anim.view_hide);
+        animShow = AnimationUtils.loadAnimation(this, R.anim.view_show);
+        animHide = AnimationUtils.loadAnimation(this, R.anim.view_hide);
 
         Intent intent = getIntent();
-        offerId = intent.getIntExtra("OfferID",1);
+        offerId = intent.getIntExtra("OfferID", 1);
+        mBackActivityName = intent.getStringExtra("BackActivityName");
         intent.getClass();
+        Log.e(TAG, "initialize:--->Search" + mBackActivityName);
 
         userId = appData.getUserId();
       /*  if (appData.getUserType().equals("R")){
@@ -293,19 +288,16 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         }*/
 
         similarOfferList = new ArrayList<Offer>();
-        try
-        {
+        try {
             showProgressDialog();
             RequestTask requestTask = new RequestTask(AppConstant.GET_PROPERTY_INFO_LESSEE, AppConstant.HttpRequestType.getPropertyInfo);
             requestTask.delegate = SearchedOfferDetailActivity.this;
-            String params="propertyId=" + offerId + "&userId=" + userId + "&userType=" + appData.getUserType();
+            String params = "propertyId=" + offerId + "&userId=" + userId + "&userType=" + appData.getUserType();
 
             Log.e("Offer Details Params", params);
 
             requestTask.execute(AppConstant.GET_PROPERTY_INFO_LESSEE + params);
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -327,16 +319,14 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         adapter.notifyDataSetChanged();
     }*/
 
-    private void setToolbar()
-    {
+    private void setToolbar() {
         setSupportActionBar(toolbar);
         Drawable launcher = ContextCompat.getDrawable(this, R.mipmap.app_small_toolbar_icon);
         toolbar.setNavigationIcon(launcher);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Intent firstActivityIntent = new Intent(SearchedOfferDetailActivity.this, SearchActivity.class);
                 firstActivityIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 SearchedOfferDetailActivity.this.startActivity(firstActivityIntent);
@@ -351,16 +341,16 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
     }
 
     @Override
-    public void openAdminPanel()
-    {
+    public void openAdminPanel() {
         adminLayout.setVisibility(View.VISIBLE);
-        adminLayout.startAnimation( animShow );
+        adminLayout.startAnimation(animShow);
 
         new CountDownTimer(AppConstant.ADMIN_BAR_OPEN_TIME, 100) {
 
             public void onTick(long millisUntilFinished) {
 
             }
+
             public void onFinish() {
                 adminbar.imgOpenArrow.setVisibility(View.VISIBLE);
             }
@@ -368,10 +358,9 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
     }
 
     @Override
-    public void closeAdminPanel()
-    {
+    public void closeAdminPanel() {
         adminLayout.setVisibility(View.GONE);
-        adminLayout.startAnimation( animHide );
+        adminLayout.startAnimation(animHide);
 
         adminbar.imgOpenArrow.setVisibility(View.GONE);
         recreate();
@@ -393,10 +382,9 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
 
     @Override
     public void backgroundActivityComp(String response, AppConstant.HttpRequestType completedRequestType) {
-        AppDebugLog.println("Response is "+response);
+        AppDebugLog.println("Response is " + response);
         cancelProgressDialog();
-        if(completedRequestType == AppConstant.HttpRequestType.getPropertyInfo)
-        {
+        if (completedRequestType == AppConstant.HttpRequestType.getPropertyInfo) {
             JSONObject properties_response = null;
             try {
                 properties_response = new JSONObject(response);
@@ -423,19 +411,22 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
                 String price = propInfoObj.getString("price");
                 String currency = propInfoObj.getString("currency_type");
                 String currency_sign = "$";
-                switch (currency){
-                    case "USD": currency_sign = "$";
+                switch (currency) {
+                    case "USD":
+                        currency_sign = "$";
                         break;
-                    case "EUR": currency_sign = "€";
+                    case "EUR":
+                        currency_sign = "€";
                         break;
-                    case "Pound": currency_sign = "£";
+                    case "Pound":
+                        currency_sign = "£";
                         break;
                 }
 
                 String propPrice = currency_sign + " " + propInfoObj.getString("price");
 
                 String propAddress = propInfoObj.getString("postCity") + ", " + propInfoObj.getString("streetName");
-                                                 //+ " " + propInfoObj.getString("unitCode");
+                //+ " " + propInfoObj.getString("unitCode");
                 String propWorkType = propInfoObj.getString("work_type");
                 String propDesc = propInfoObj.getString("description");
                 String mEmployName = propInfoObj.getString("contact_name");
@@ -465,19 +456,18 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
                 selectedOffer = new Offer(propId, propName, propJobType, price, 0/*distance*/);
 
                 int interest = properties_response.getInt("isInterested");
-                if(job_status == 0 && interest != 0)
-                {
+                if (job_status == 0 && interest != 0) {
                     isInterested = true;
                     btnInterested.setText("You have sent interest");
                     btnInterested.setBackground(getResources().getDrawable(R.drawable.bg_success));
                 }
-                if(job_status == 1){
+                if (job_status == 1) {
                     isInterested = true;
                     btnInterested.setEnabled(false);
                     btnInterested.setText("You are progressed on");
                     btnInterested.setBackground(getResources().getDrawable(R.drawable.bg_success));
                 }
-                if(job_status == 2){
+                if (job_status == 2) {
                     isInterested = true;
                     btnInterested.setEnabled(false);
                     btnInterested.setText("You finished out");
@@ -485,14 +475,13 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
                     btnReviewOffer.setVisibility(View.VISIBLE);
                 }
 
-                if(job_status == 3){
+                if (job_status == 3) {
                     isInterested = true;
                     btnInterested.setEnabled(false);
                     btnInterested.setText("You finished out");
                     btnInterested.setBackground(getResources().getDrawable(R.drawable.bg_success));
                     btnReviewOffer.setVisibility(View.GONE);
-                    if(properties_response.getInt("count_employer_review") != 0)
-                    {
+                    if (properties_response.getInt("count_employer_review") != 0) {
                         employerReviewLayout.setVisibility(View.VISIBLE);
                         JSONObject employerReview = properties_response.getJSONObject("employer_review");
                         float employerMarks = Float.parseFloat(employerReview.getString("marks"));
@@ -500,14 +489,11 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
                         txtEmployerMarks.setText(employerReview.getString("marks"));
                         txtEmployerDescription.setText(employerReview.getString("description"));
                         //unreadMsgClientId = lastUnreadObj.getInt("client_id");
-                    }
-                    else
-                    {
+                    } else {
                         employerReviewLayout.setVisibility(View.GONE);
                     }
 
-                    if(properties_response.getInt("count_contact_person_review") != 0)
-                    {
+                    if (properties_response.getInt("count_contact_person_review") != 0) {
                         contactPersonReviewLayout.setVisibility(View.VISIBLE);
                         JSONObject contactPersonReview = properties_response.getJSONObject("contact_person_review");
                         float contactPersonMarks = Float.parseFloat(contactPersonReview.getString("marks"));
@@ -515,8 +501,7 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
                         txtContactPersonMarks.setText(contactPersonReview.getString("marks"));
                         txtContactPersonDescription.setText(contactPersonReview.getString("description"));
                         //readMsgClientId = lastReadObj.getInt("client_id");
-                    }
-                    else {
+                    } else {
                         contactPersonReviewLayout.setVisibility(View.GONE);
                     }
                 } else {
@@ -539,17 +524,14 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
-        else if(completedRequestType == AppConstant.HttpRequestType.SendNewInterested)
-        {
+        } else if (completedRequestType == AppConstant.HttpRequestType.SendNewInterested) {
             cancelProgressDialog();
             JSONObject newInterestedResultObj = null;
             try {
                 newInterestedResultObj = new JSONObject(response);
 
                 String status = newInterestedResultObj.getString("status");
-                if(status.equals("success"))
-                {
+                if (status.equals("success")) {
                     //interestedLayout.setVisibility(View.GONE);
                     //txtInterestSent.setVisibility(View.VISIBLE);
                     isInterested = true;
@@ -558,8 +540,7 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
 
                     //mainScrollView.fullScroll(ScrollView.FOCUS_UP);
                     //mainScrollView.scrollTo(0, (int) txtInterestSent.getY());
-                }
-                else
+                } else
                     Toast.makeText(SearchedOfferDetailActivity.this,
                             newInterestedResultObj.getString("msg"), Toast.LENGTH_SHORT).show();
 
@@ -569,11 +550,9 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         }
     }
 
-    private String formatNumber(double distance)
-    {
+    private String formatNumber(double distance) {
         String unit = "m";
-        if (distance > 1000)
-        {
+        if (distance > 1000) {
             distance /= 1000;
             unit = "km";
         }
@@ -609,18 +588,18 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         }
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
 
 //        getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==R.id.action_logout){
+        if (item.getItemId() == R.id.action_logout) {
 
 
-            Intent loginIntent=new Intent(getApplicationContext(),MainActivity.class);
+            Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
             loginIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(loginIntent);
 

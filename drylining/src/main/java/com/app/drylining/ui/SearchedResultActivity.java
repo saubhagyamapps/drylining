@@ -318,6 +318,8 @@ public class SearchedResultActivity extends CustomMainActivity implements Reques
                 String image_path = property.getString("image_path");
                 double distance=property.optDouble("distance");
                 String city = property.getString("postcity");
+                String user_id = property.getString("user_id");
+
                 int job_state = Integer.parseInt(property.getString("status"));
                 String interested = "";
                 if (job_state == 1){
@@ -326,11 +328,12 @@ public class SearchedResultActivity extends CustomMainActivity implements Reques
                     interested  = "Interested: " + property.getString("countInterest");
                 }
 
-                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path);
+                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path,user_id,"");
                 offer.setDistance(distance);
                 offer.setCurrency(currency_type);
                 offer.setPostCity(city);
                 offer.setInterested(interested);
+                offer.setInterested(user_id);
 
                 offer.setConversations(msgNumArray.getInt(i));
                 offer.setIsUnreadMsg(isUnReadMsgArray.getInt(i));

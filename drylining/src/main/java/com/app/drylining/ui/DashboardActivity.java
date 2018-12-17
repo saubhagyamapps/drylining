@@ -113,6 +113,16 @@ public class DashboardActivity extends CustomMainActivity implements TabLayout.O
         initialize();
 
     }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        try {
+            onCreate(savedInstanceState);
+        }catch (Exception e){
+
+        }
+
+    }
 
     private void countApiCall() {
 

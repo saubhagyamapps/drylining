@@ -50,91 +50,90 @@
         </activity>
         <activity
             android:name="com.app.drylining.ui.MainActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.custom.CustomWebView"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ForgotPasswordActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.ui.ChangePasswordActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.ui.SearchedOffersActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.SearchedResultActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.AddedOffersActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.ui.SearchedOfferDetailActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.AddedOfferDetailActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.MapActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.AddNewOfferActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.ui.SearchNewOfferActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.OtpVerificationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_otp_verification"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.app.drylining.ui.EditPropertyActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityModifyOffer"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.ui.MultiPhotoSelectActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.NoInternetMessage"
-            android:configChanges="orientation|keyboardHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/alert_title_none_net"
-            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Dialog" />
         <activity
             android:name="com.app.drylining.ui.ActivityNewQuestion"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityConversationsLessee"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityConversationsRenter"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityRemoveOffer"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.app.drylining.ui.ActivityNotifications"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityFavoriteOffers"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityMyAccount"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.ui.ActivityNotifySettings"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|keyboardHidden" />
 
         <!-- FCM -->
         <service android:name="com.app.drylining.fcm.MyFcmListenerService" >
@@ -184,39 +183,58 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAlS2EZwDoAJjsQ3ftM7X1hs3XOyjymh_4" />
 
-        <activity android:name="com.app.drylining.ui.DashboardActivity" />
-        <activity android:name="com.app.drylining.ui.AddNewToolActivity" />
-        <activity android:name="com.app.drylining.ui.AddedToolDetailActivity" />
-        <activity android:name="com.app.drylining.ui.ActivityModifyTool" />
-        <activity android:name="com.app.drylining.ui.JobReviewActivity" />
-        <activity android:name="com.app.drylining.ui.ActivityRemoveTool" />
-        <activity android:name="com.app.drylining.ui.SearchActivity" />
-        <activity android:name="com.app.drylining.ui.SearchedToolDetailActivity" />
-        <activity android:name="com.app.drylining.ui.SearchNewToolActivity" />
-        <activity android:name="com.app.drylining.ui.SearchedToolResultActivity" />
-        <activity android:name="com.app.drylining.ui.OTPAcivity" />
+        <activity
+            android:name="com.app.drylining.ui.DashboardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.AddNewToolActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.AddedToolDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityModifyTool"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.JobReviewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.ActivityRemoveTool"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchedToolDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchNewToolActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.SearchedToolResultActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.app.drylining.ui.OTPAcivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name="com.app.drylining.chat.ui.activity.SelectUsersActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/ChatActivityTheme"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.app.drylining.chat.ui.activity.DialogsActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/ChatActivityTheme" />
         <activity
             android:name="com.app.drylining.chat.ui.activity.ChatActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/ChatActivityTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.app.drylining.chat.ui.activity.ChatInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/chat_info"
-            android:screenOrientation="portrait"
             android:theme="@style/ChatActivityTheme" />
-        <activity
-            android:name="com.app.drylining.chat.ui.activity.AttachmentImageActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name="com.app.drylining.chat.ui.activity.AttachmentImageActivity" />
 
         <service
             android:name="com.quickblox.messages.services.SubscribeTaskManager"

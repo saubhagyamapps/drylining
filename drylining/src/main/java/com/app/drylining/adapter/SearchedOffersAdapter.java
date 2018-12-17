@@ -155,6 +155,7 @@ public class SearchedOffersAdapter extends RecyclerView.Adapter<SearchedOffersAd
             if (offer.getmUserIdPostedJob().equals(appData.getUserId())) {
                 Intent intent = new Intent(mContext, AddedOfferDetailActivity.class);
                 intent.putExtra("OfferID", offerId);
+                intent.putExtra("BackActivityName", "SearchAcivity");
                 //intent.putExtra("DISTANCE", offer.getDistance());
 
                 AppDebugLog.println("Search OfferID" + offerId);
@@ -162,6 +163,7 @@ public class SearchedOffersAdapter extends RecyclerView.Adapter<SearchedOffersAd
             } else {
                 Intent intent = new Intent(mContext, SearchedOfferDetailActivity.class);
                 intent.putExtra("OfferID", offerId);
+                intent.putExtra("BackActivityName", "SearchAcivity");
                 //intent.putExtra("DISTANCE", offer.getDistance());
 
                 AppDebugLog.println("Search OfferID" + offerId);

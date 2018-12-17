@@ -306,7 +306,7 @@ public class AddedOffersActivity extends CustomMainActivity implements RequestTa
                 Double latitude = Double.parseDouble(property.getString("latitude").toString());
                 String image_path = property.getString("image_path");
 
-                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path);
+                Offer offer = new Offer(id, name, longitude, latitude, price, room_type, image_path,"","");
                 offer.setConversations(msgNumArray.getInt(i));
                 offer.setIsUnreadMsg(isUnReadMsgArray.getInt(i));
                 offerList.add(offer);
