@@ -154,6 +154,7 @@ public class AddedOffersAdapter extends RecyclerView.Adapter<AddedOffersAdapter.
             int offerId = offer.getId();
             Intent intent = new Intent(mContext, AddedOfferDetailActivity.class);
             intent.putExtra("OfferID", offerId);
+            intent.putExtra("BackActivityName", "MyJobAcivity");
             AppDebugLog.println("OfferID" + offerId);
             mContext.startActivity(intent);
             //activity.finish();

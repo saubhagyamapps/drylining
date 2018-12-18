@@ -310,11 +310,15 @@ public class AddedOfferDetailActivity extends CustomMainActivity implements Requ
             closeAdminPanel();
         else {
             super.onBackPressed();
+            try{
             if (mBackActivityName.equals("Notifation")) {
                 finish();
             } else if (mBackActivityName.equals("SearchAcivity")) {
                 finish();
             } else {
+                startActivity(new Intent(this, DashboardActivity.class));
+                finish();
+            }}catch (Exception e){
                 startActivity(new Intent(this, DashboardActivity.class));
                 finish();
             }

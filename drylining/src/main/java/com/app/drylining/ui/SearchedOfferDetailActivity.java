@@ -237,16 +237,20 @@ public class SearchedOfferDetailActivity extends CustomMainActivity implements R
         if (adminLayout.getVisibility() == View.VISIBLE)
             closeAdminPanel();
         else {
-            super.onBackPressed();
-            if (mBackActivityName.equals("Notifation")) {
-                finish();
-            } else if (mBackActivityName.equals("SearchAcivity")) {
-                finish();
-            } else {
+            try {
+                super.onBackPressed();
+                if (mBackActivityName.equals("Notifation")) {
+                    finish();
+                } else if (mBackActivityName.equals("SearchAcivity")) {
+                    finish();
+                } else {
+                    startActivity(new Intent(this, DashboardActivity.class));
+                    finish();
+                }
+            }catch (Exception e){
                 startActivity(new Intent(this, DashboardActivity.class));
                 finish();
             }
-
         }
     }
 

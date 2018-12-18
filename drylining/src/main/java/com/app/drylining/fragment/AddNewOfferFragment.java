@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -141,7 +142,12 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
         txtMyJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()) {
+                    @Override
+                    public boolean requestChildRectangleOnScreen(RecyclerView parent, View child, Rect rect, boolean immediate) {
+                        return false;
+                    }
+                });
                 recyclerView_new.setVisibility(View.GONE);
                 recyclerView.setVisibility(View.VISIBLE);
 
@@ -159,7 +165,13 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
         txtRecentrlyAddJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                offerList1.clear();
+
+                recyclerView_new.setLayoutManager(new LinearLayoutManager(getActivity()) {
+                    @Override
+                    public boolean requestChildRectangleOnScreen(RecyclerView parent, View child, Rect rect, boolean immediate) {
+                        return false;
+                    }
+                });
                 recyclerView.getRecycledViewPool().clear();
                 recyclerView.setVisibility(View.GONE);
                 recyclerView_new.setVisibility(View.VISIBLE);
@@ -167,6 +179,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                 txtMyJob.setBackgroundColor(getResources().getColor(R.color.white));
                 txtRecentrlyAddJob.setBackgroundResource(R.drawable.app_board_with_padding);
                 sendGetProperties();
+                offerList1.clear();
                 Flag = 1;
 
 
@@ -229,8 +242,8 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
     public void onResume() {
         AppDebugLog.println("In resume of LoginFragment");
         super.onResume();
-        offerList.clear();
-        offerList1.clear();
+
+
 
     /*    try {
             SharedPreferences pref = getActivity().getSharedPreferences("BackStack", 0); // 0 - for private mode
@@ -249,10 +262,13 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
         }*/
         if (Flag == 0)
         {
-            sendSearchRequest();
+           // sendSearchRequest();
+            offerList.clear();
+            txtMyJob.performClick();
         }
         else
         {
+            offerList1.clear();
             sendGetProperties();
 
         }
@@ -310,6 +326,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                 recyclerView_new.setLayoutManager(mLayoutManager);
                 recyclerView_new.setItemAnimator(new DefaultItemAnimator());
                 recyclerView_new.setAdapter(adapter1);
+
             }
             adapter1.notifyDataSetChanged();
             txt_none_added_offer.setVisibility(View.GONE);
@@ -376,6 +393,7 @@ public class AddNewOfferFragment extends Fragment implements RequestTaskDelegate
                     offer.setIsUnreadMsg(isUnReadMsgArray.getInt(i));
                     offerList.add(offer);
                 }
+
                 setRecyclerView();
             } catch (Exception e) {
                 e.printStackTrace();

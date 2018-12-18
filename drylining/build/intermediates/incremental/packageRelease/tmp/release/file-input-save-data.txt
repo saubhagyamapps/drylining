@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 12 21:08:11 IST 2018
+#Tue Dec 18 12:34:31 IST 2018
 5.base=E\:\\Dryling\\Yagnesh\\drylining\\drylining\\build\\intermediates\\assets\\release
 22.path=fonts/RobotoCondensed-Italic.ttf
 32.set=ASSET

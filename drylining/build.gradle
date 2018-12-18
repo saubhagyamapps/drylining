@@ -16,8 +16,10 @@ android {
 
         targetSdkVersion 27
 
-        versionCode 4
-        versionName "1.03"
+        versionCode 7
+        versionName "1.10"
+        multiDexEnabled true
+
     }
     packagingOptions {
         exclude 'META-INF/LGPL2.1'
@@ -71,6 +73,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
     implementation 'com.mukesh:otpview:1.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
 }
 
 apply plugin: 'com.google.gms.google-services'
